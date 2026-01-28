@@ -1,19 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Test Marathi</title>
+  <meta charset="UTF-8">
+  <title>Cyber Cafe | सायबर कॅफे</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cyber Cafe – Reliable, Fast & Trusted Online Services">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<h1>
-  Cyber Cafe <span class="mr">(सायबर कॅफे)</span>
-</h1>
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+    <h1>
+      Cyber Cafe
+      <span class="mr">(सायबर कॅफे)</span>
+    </h1>
 
-<p>
-  Reliable • Fast • Trusted Services<br>
-  <span class="mr">विश्वासार्ह • जलद • खात्रीशीर सेवा</span>
-</p>
+    <p>
+      Reliable • Fast • Trusted Services<br>
+      <span class="mr">विश्वासार्ह • जलद • खात्रीशीर सेवा</span>
+    </p>
+
+    <nav class="menu">
+      <a href="#home" class="menu-link active">Home</a>
+      <a href="#services" class="menu-link">Services</a>
+      <a href="#contact" class="menu-link">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ================= HOME ================= -->
+  <section id="home" class="section">
+    <div class="card">
+      <h2>
+        Welcome
+        <span class="mr">(स्वागत आहे)</span>
+      </h2>
+
+      <p>
+        Welcome to <strong>Cyber Cafe</strong>.
+        We provide fast and reliable online & government services.
+      </p>
+
+      <p class="mr">
+        आमच्या सायबर कॅफेमध्ये आपले स्वागत आहे.
+        येथे सर्व प्रकारच्या ऑनलाईन व शासकीय सेवा
+        जलद व विश्वासार्ह पद्धतीने दिल्या जातात.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES ================= -->
+  <section id="services" class="section">
+    <div class="card">
+      <h2>
+        Our Services
+        <span class="mr">(आमच्या सेवा)</span>
+      </h2>
+
+      <ul>
+        <li>
+          Online Application Filling
+          <span class="mr">– ऑनलाईन अर्ज भरणे</span>
+        </li>
+        <li>
+          Aadhaar & PAN Services
+          <span class="mr">– आधार व पॅन कार्ड सेवा</span>
+        </li>
+        <li>
+          Government Forms
+          <span class="mr">– शासकीय फॉर्म</span>
+        </li>
+        <li>
+          Printing & Scanning
+          <span class="mr">– प्रिंटिंग व स्कॅनिंग</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="section">
+    <div class="card">
+      <h2>
+        Contact Us
+        <span class="mr">(संपर्क साधा)</span>
+      </h2>
+
+      <p>
+        Visit our office or contact us on WhatsApp.
+      </p>
+
+      <p class="mr">
+        आमच्या कार्यालयाला भेट द्या किंवा WhatsApp वर संपर्क साधा.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    © Cyber Cafe. All rights reserved.
+  </footer>
+
+  <!-- ================= FLOATING BUTTONS ================= -->
+  <div class="floating-buttons">
+    <!-- WhatsApp -->
+    <a
+      href="https://wa.me/917721091856"
+      target="_blank"
+      class="float-btn whatsapp"
+      title="Chat on WhatsApp"
+    >
+      💬
+    </a>
+
+    <!-- Call -->
+    <a
+      href="tel:+917721091856"
+      class="float-btn call"
+      title="Call Now"
+    >
+      📞
+    </a>
+  </div>
+
+  <!-- ================= ACTIVE MENU SCRIPT ================= -->
+  <script>
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".menu-link");
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 130;
+        if (window.scrollY >= sectionTop) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === "#" + current) {
+          link.classList.add("active");
+        }
+      });
+    });
+  </script>
 
 </body>
 </html>
