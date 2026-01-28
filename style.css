@@ -1,49 +1,108 @@
-/* =========================
-   RESET
-========================= */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* =========================
-   BODY
-========================= */
+/* BODY */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #0f7a3a;   /* Cyber Cafe Green */
+  background: #f3f4f6;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* HEADER */
+.header {
+  background: #0f7a3a;
   color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: auto;
+  padding: 25px 20px;
   text-align: center;
-  min-height: 100vh;
-  padding: 40px 20px;
 }
 
-/* =========================
-   MAIN HEADING
-========================= */
-h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
+.header h1 {
+  font-size: 32px;
 }
 
-/* =========================
-   TAGLINE / PARAGRAPH
-========================= */
-p {
-  font-size: 16px;
+.header p {
+  font-size: 14px;
+  margin-top: 5px;
   opacity: 0.9;
 }
 
-/* =========================
-   RESPONSIVE (Mobile)
-========================= */
+/* MENU */
+.menu {
+  margin-top: 15px;
+}
+
+.menu a {
+  color: #eaffea;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+/* SECTIONS */
+.section {
+  padding: 40px 20px;
+}
+
+/* CARD */
+.card {
+  background: #ffffff;
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+  margin-bottom: 15px;
+  color: #111827;
+}
+
+.card ul {
+  padding-left: 20px;
+}
+
+.card ul li {
+  margin-bottom: 8px;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* RESPONSIVE */
 @media (max-width: 600px) {
-  h1 {
-    font-size: 28px;
+  .header h1 {
+    font-size: 26px;
   }
 
-  p {
-    font-size: 14px;
+  .menu a {
+    display: inline-block;
+    margin: 8px;
+  }
+
+  .card {
+    padding: 20px;
   }
 }
