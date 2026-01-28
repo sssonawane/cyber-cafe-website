@@ -110,3 +110,9 @@ body {
     padding: 20px;
   }
 }
+
+/* MARATHI TEXT */
+.mr {
+  font-size: 14px;
+  color: #374151;
+}
