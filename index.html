@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>Cyber Cafe | सायबर कॅफे</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Cyber Cafe – Reliable, Fast & Trusted Online Services">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,8 +12,10 @@
   <!-- HEADER -->
   <header class="header">
     <h1>Cyber Cafe <span class="mr">(सायबर कॅफे)</span></h1>
-    <p>Reliable • Fast • Trusted Services<br>
-       विश्वासार्ह • जलद • खात्रीशीर सेवा</p>
+    <p>
+      Reliable • Fast • Trusted Services<br>
+      <span class="mr">विश्वासार्ह • जलद • खात्रीशीर सेवा</span>
+    </p>
 
     <nav class="menu">
       <a href="#home" class="menu-link active">Home</a>
@@ -27,14 +28,16 @@
   <section id="home" class="section">
     <div class="card">
       <h2>Welcome <span class="mr">(स्वागत आहे)</span></h2>
+
       <p>
-        Welcome to <strong>Cyber Cafe</strong>. We provide fast and reliable
-        online & government services.
+        Welcome to <strong>Cyber Cafe</strong>.  
+        We provide fast and reliable online & government services.
       </p>
+
       <p class="mr">
-        आमच्या <strong>सायबर कॅफे</strong> मध्ये आपले स्वागत आहे.
+        आमच्या सायबर कॅफेमध्ये आपले स्वागत आहे.
         येथे सर्व प्रकारच्या ऑनलाईन व शासकीय सेवा
-        जलद आणि विश्वासार्ह पद्धतीने दिल्या जातात.
+        जलद व विश्वासार्ह पद्धतीने दिल्या जातात.
       </p>
     </div>
   </section>
@@ -43,6 +46,7 @@
   <section id="services" class="section">
     <div class="card">
       <h2>Our Services <span class="mr">(आमच्या सेवा)</span></h2>
+
       <ul>
         <li>
           Online Application Filling  
@@ -68,9 +72,11 @@
   <section id="contact" class="section">
     <div class="card">
       <h2>Contact Us <span class="mr">(संपर्क साधा)</span></h2>
+
       <p>
         Visit our office or contact us on WhatsApp.
       </p>
+
       <p class="mr">
         आमच्या कार्यालयाला भेट द्या किंवा WhatsApp वर संपर्क साधा.
       </p>
@@ -80,30 +86,6 @@
   <footer class="footer">
     © Cyber Cafe. All rights reserved.
   </footer>
-
-  <!-- ACTIVE MENU SCRIPT -->
-  <script>
-    const sections = document.querySelectorAll("section");
-    const navLinks = document.querySelectorAll(".menu-link");
-
-    window.addEventListener("scroll", () => {
-      let current = "";
-
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop - 120;
-        if (scrollY >= sectionTop) {
-          current = section.getAttribute("id");
-        }
-      });
-
-      navLinks.forEach(link => {
-        link.classList.remove("active");
-        if (link.getAttribute("href") === "#" + current) {
-          link.classList.add("active");
-        }
-      });
-    });
-  </script>
 
 </body>
 </html>
