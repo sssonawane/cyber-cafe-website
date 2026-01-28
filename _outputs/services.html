@@ -1,52 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Cyber Cafe - Services</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Services - Cyber Cafe</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1 data-en="Our Services" data-mr="आमच्या सेवा">Our Services</h1>
+<header class="header">
+    <h1>Cyber Cafe</h1>
+    <p>Reliable • Fast • Trusted Services</p>
 </header>
 
-<nav>
-    <a href="index.html" data-en="Home" data-mr="मुख्य पृष्ठ">Home</a>
-    <a href="about.html" data-en="About" data-mr="माहिती">About</a>
-    <a href="services.html" data-en="Services" data-mr="सेवा">Services</a>
-    <a href="contact.html" data-en="Contact" data-mr="संपर्क">Contact</a>
+<nav class="menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html" class="active">Services</a>
+    <a href="contact.html">Contact</a>
 </nav>
 
-<div style="text-align:right; margin:15px 20px;">
-    <button onclick="setLang('en')" class="btn">English</button>
-    <button onclick="setLang('mr')" class="btn">मराठी</button>
-</div>
-
-<div class="container">
-    <div class="services">
-        <div class="service-card">
-            <h3 data-en="Online Forms" data-mr="ऑनलाइन फॉर्म">Online Forms</h3>
-            <p data-en="Government & private applications."
-               data-mr="सरकारी व खासगी ऑनलाइन अर्ज.">
-               Government & private applications.
-            </p>
-        </div>
+<main class="container">
+    <div class="card">
+        <h2>Our Services</h2>
+        <ul class="services-list">
+            <li>Aadhaar Services (Update / Print)</li>
+            <li>PAN Card Apply / Correction</li>
+            <li>Government Online Forms</li>
+            <li>CSC & Digital Services</li>
+            <li>Online Applications & Payments</li>
+            <li>Printing, Scanning, Xerox</li>
+            <li>Resume & Job Applications</li>
+        </ul>
     </div>
-</div>
+</main>
 
-<footer>© Cyber Cafe</footer>
-
-<a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-float" target="_blank">💬</a>
-<a href="tel:+91XXXXXXXXXX" class="call-float">📞</a>
-
-<script>
-function setLang(lang){
-    document.querySelectorAll("[data-en]").forEach(el=>{
-        el.innerText = el.getAttribute("data-"+lang);
-    });
-}
-</script>
+<footer class="footer">
+    © Cyber Cafe. All rights reserved.
+</footer>
 
 </body>
 </html>
