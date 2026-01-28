@@ -1,0 +1,195 @@
+/* ===== GLOBAL RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===== HEADER / HERO ===== */
+header {
+    background: linear-gradient(135deg, #0b7d3e, #0f9d58);
+    color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    opacity: 0.95;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+    background: #ffffff;
+    padding: 14px 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    overflow: auto; /* IMPORTANT for buttons */
+}
+
+nav a {
+    margin-right: 18px;
+    text-decoration: none;
+    color: #0b7d3e;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ===== LANGUAGE BUTTONS ===== */
+.lang-buttons {
+    float: right;
+}
+
+.lang-buttons button {
+    margin-left: 6px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: none;
+    background: #0f9d58;
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.lang-buttons button:hover {
+    background: #0b7d3e;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* ===== CARD ===== */
+.card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+}
+
+/* ===== SERVICES GRID ===== */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.service-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.service-card h3 {
+    margin-bottom: 10px;
+    color: #0b7d3e;
+}
+
+/* ===== BUTTON ===== */
+.btn {
+    display: inline-block;
+    background: #0f9d58;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background: #0b7d3e;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #0b7d3e;
+    color: white;
+    margin-top: 60px;
+    font-size: 14px;
+}
+
+/* ===== FLOATING WHATSAPP & CALL BUTTONS ===== */
+.whatsapp-float {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    font-size: 26px;
+    padding: 14px 16px;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    z-index: 999;
+}
+
+.call-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #0b7d3e;
+    color: white;
+    font-size: 26px;
+    padding: 14px 16px;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    z-index: 999;
+}
+
+.whatsapp-float:hover,
+.call-float:hover {
+    transform: scale(1.1);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin-bottom: 8px;
+    }
+
+    .lang-buttons {
+        float: none;
+        margin-top: 10px;
+        text-align: center;
+    }
+}

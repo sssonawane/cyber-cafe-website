@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cyber Cafe - Services</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1 data-en="Our Services" data-mr="आमच्या सेवा">Our Services</h1>
+</header>
+
+<nav>
+    <a href="index.html" data-en="Home" data-mr="मुख्य पृष्ठ">Home</a>
+    <a href="about.html" data-en="About" data-mr="माहिती">About</a>
+    <a href="services.html" data-en="Services" data-mr="सेवा">Services</a>
+    <a href="contact.html" data-en="Contact" data-mr="संपर्क">Contact</a>
+</nav>
+
+<div style="text-align:right; margin:15px 20px;">
+    <button onclick="setLang('en')" class="btn">English</button>
+    <button onclick="setLang('mr')" class="btn">मराठी</button>
+</div>
+
+<div class="container">
+    <div class="services">
+        <div class="service-card">
+            <h3 data-en="Online Forms" data-mr="ऑनलाइन फॉर्म">Online Forms</h3>
+            <p data-en="Government & private applications."
+               data-mr="सरकारी व खासगी ऑनलाइन अर्ज.">
+               Government & private applications.
+            </p>
+        </div>
+    </div>
+</div>
+
+<footer>© Cyber Cafe</footer>
+
+<a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-float" target="_blank">💬</a>
+<a href="tel:+91XXXXXXXXXX" class="call-float">📞</a>
+
+<script>
+function setLang(lang){
+    document.querySelectorAll("[data-en]").forEach(el=>{
+        el.innerText = el.getAttribute("data-"+lang);
+    });
+}
+</script>
+
+</body>
+</html>
