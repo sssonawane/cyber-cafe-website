@@ -1,147 +1,114 @@
-/* =========================
-   RESET
-========================= */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* =========================
-   SMOOTH SCROLL
-========================= */
 html {
   scroll-behavior: smooth;
 }
 
-/* =========================
-   BODY
-========================= */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: #f3f4f6;
+  background: #f4f6f8;
   color: #333;
-  line-height: 1.6;
 }
 
-/* =========================
-   HEADER
-========================= */
-.header {
+/* HEADER */
+.site-header {
   background: #0f7a3a;
-  color: #ffffff;
+  color: white;
   text-align: center;
-  padding: 30px 20px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  padding: 40px 20px 25px;
 }
 
-.header h1 {
-  font-size: 32px;
-  font-weight: bold;
+.site-header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
 }
 
-.header p {
-  margin-top: 6px;
+.tagline {
   font-size: 14px;
+  line-height: 1.5;
+}
+
+.mr {
+  font-size: 13px;
   opacity: 0.9;
 }
 
-/* =========================
-   MENU
-========================= */
+/* MENU */
 .menu {
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .menu a {
-  color: #eaffea;
+  color: white;
   text-decoration: none;
   margin: 0 15px;
   font-weight: bold;
-  padding-bottom: 4px;
+  padding-bottom: 5px;
 }
 
-.menu a:hover {
-  color: #ffffff;
-}
-
-/* ACTIVE MENU */
+.menu a:hover,
 .menu a.active {
   border-bottom: 2px solid #ffffff;
 }
 
-/* =========================
-   SECTIONS
-========================= */
-.section {
-  padding: 50px 20px;
-}
-
-/* =========================
-   CARD
-========================= */
+/* CARDS */
 .card {
-  background: #ffffff;
-  max-width: 900px;
-  margin: 0 auto;
+  background: white;
+  max-width: 800px;
+  margin: 40px auto;
   padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
 .card h2 {
-  margin-bottom: 12px;
-  color: #111827;
-}
-
-.card p {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .card ul {
-  padding-left: 20px;
+  margin-left: 20px;
 }
 
-.card ul li {
-  margin-bottom: 8px;
+.card li {
+  margin-bottom: 10px;
 }
 
-/* =========================
-   MARATHI TEXT
-========================= */
-.mr {
-  display: block;
-  margin-top: 6px;
-  font-size: 14px;
-  color: #555;
+/* CONTACT BUTTONS */
+.contact-buttons {
+  margin-top: 20px;
 }
 
-/* =========================
-   FOOTER
-========================= */
-.footer {
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.whatsapp {
+  background: #25d366;
+}
+
+.call {
+  background: #007bff;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+/* FOOTER */
+footer {
   text-align: center;
   padding: 20px;
-  font-size: 14px;
-  color: #6b7280;
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
-@media (max-width: 600px) {
-  .header h1 {
-    font-size: 26px;
-  }
-
-  .menu a {
-    display: inline-block;
-    margin: 8px;
-  }
-
-  .card {
-    padding: 20px;
-  }
+  font-size: 13px;
+  color: #666;
 }
