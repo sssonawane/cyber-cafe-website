@@ -1,8 +1,9 @@
-/* RESET */
+/* ================= GLOBAL ================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
 }
 
 html {
@@ -10,105 +11,158 @@ html {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
   background: #f4f6f8;
-  color: #333;
+  color: #222;
+  line-height: 1.6;
 }
 
-/* HEADER */
-.site-header {
-  background: #0f7a3a;
-  color: white;
+/* ================= HEADER ================= */
+header {
+  background: #137c3a;
+  color: #fff;
+  padding: 30px 15px 25px;
   text-align: center;
-  padding: 40px 20px 25px;
 }
 
-.site-header h1 {
+.header-container h1 {
   font-size: 36px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .tagline {
   font-size: 14px;
-  line-height: 1.5;
+  opacity: 0.95;
 }
 
-.mr {
+.tagline .mr {
+  display: block;
   font-size: 13px;
-  opacity: 0.9;
+  margin-top: 4px;
 }
 
-/* MENU */
-.menu {
-  margin-top: 20px;
+/* ================= MENU ================= */
+nav {
+  margin-top: 15px;
 }
 
-.menu a {
-  color: white;
+nav a {
+  color: #ffffff;
   text-decoration: none;
-  margin: 0 15px;
-  font-weight: bold;
-  padding-bottom: 5px;
+  margin: 0 12px;
+  padding-bottom: 4px;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s;
 }
 
-.menu a:hover,
-.menu a.active {
+nav a:hover,
+nav a.active {
   border-bottom: 2px solid #ffffff;
 }
 
-/* CARDS */
-.card {
-  background: white;
-  max-width: 800px;
+/* ================= MAIN ================= */
+main {
+  max-width: 900px;
   margin: 40px auto;
-  padding: 30px;
+  padding: 0 15px;
+}
+
+/* ================= CARD ================= */
+.card {
+  background: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  padding: 25px 28px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
 .card h2 {
-  margin-bottom: 15px;
+  margin-bottom: 8px;
+  color: #137c3a;
 }
 
-.card ul {
-  margin-left: 20px;
+.section-sub {
+  font-size: 14px;
+  color: #555;
 }
 
-.card li {
-  margin-bottom: 10px;
+.card p {
+  margin-top: 12px;
+  font-size: 15px;
 }
 
-/* CONTACT BUTTONS */
+.mr {
+  color: #555;
+  font-size: 14px;
+}
+
+/* ================= SERVICES LIST ================= */
+ul {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 14px;
+  font-size: 15px;
+}
+
+/* ================= CONTACT BUTTONS ================= */
 .contact-buttons {
   margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
 .btn {
   display: inline-block;
-  padding: 12px 20px;
-  border-radius: 8px;
-  color: white;
+  padding: 12px 22px;
+  border-radius: 30px;
   text-decoration: none;
-  font-weight: bold;
-  margin-right: 10px;
-}
-
-.whatsapp {
-  background: #25d366;
-}
-
-.call {
-  background: #007bff;
+  font-weight: 600;
+  color: #fff;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .btn:hover {
-  opacity: 0.85;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
 
-/* FOOTER */
+.btn.call {
+  background: #0b5ed7;
+}
+
+.btn.whatsapp {
+  background: #25d366;
+}
+
+/* ================= FOOTER ================= */
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 18px;
   font-size: 13px;
-  color: #666;
+  color: #555;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 600px) {
+  .header-container h1 {
+    font-size: 28px;
+  }
+
+  nav a {
+    margin: 0 8px;
+    font-size: 14px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
 }
