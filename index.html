@@ -9,12 +9,12 @@
 body{
     margin:0;
     font-family:'Segoe UI',sans-serif;
-    background:linear-gradient(135deg,#e8f0ff,#f7fbff);
+    background:linear-gradient(135deg,#eef4ff,#f9fcff);
 }
 header{
     background:linear-gradient(90deg,#0a4da3,#007bff);
     color:#fff;
-    padding:25px 15px;
+    padding:22px 15px;
     text-align:center;
 }
 .logo{
@@ -27,7 +27,7 @@ header{
     opacity:.9;
 }
 nav{
-    background:#fff;
+    background:#ffffff;
     display:flex;
     justify-content:center;
     gap:35px;
@@ -56,8 +56,23 @@ nav a{
     margin-top:0;
     color:#0a4da3;
 }
+.hero-cta{
+    margin-top:22px;
+}
+.cta{
+    display:inline-block;
+    padding:12px 24px;
+    margin:8px;
+    border-radius:25px;
+    text-decoration:none;
+    color:#fff;
+    font-weight:600;
+}
+.cta-call{background:#28a745}
+.cta-wa{background:#25D366}
+
 .grid{
-    margin-top:40px;
+    margin-top:45px;
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
     gap:25px;
@@ -68,10 +83,18 @@ nav a{
     padding:25px;
     text-align:center;
     box-shadow:0 10px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+.box:hover{
+    transform:translateY(-6px);
+    box-shadow:0 18px 35px rgba(0,0,0,.12);
 }
 .box span{
-    font-size:28px;
+    font-size:30px;
+    display:block;
+    margin-bottom:10px;
 }
+
 footer{
     margin-top:60px;
     background:#0a4da3;
@@ -79,6 +102,8 @@ footer{
     text-align:center;
     padding:18px;
 }
+
+/* Floating WhatsApp */
 .whatsapp{
     position:fixed;
     bottom:20px;
@@ -89,6 +114,7 @@ footer{
     padding:15px 17px;
     border-radius:50%;
     text-decoration:none;
+    box-shadow:0 4px 12px rgba(0,0,0,.3);
 }
 </style>
 </head>
@@ -110,22 +136,28 @@ footer{
 
 <div class="container">
 
-<div class="hero">
-    <h2>Digital Services, Delivered with Trust 🙏</h2>
-    <p>
-        आधार, पॅन, सरकारी फॉर्म, परीक्षा अर्ज, प्रिंटिंग –  
-        सर्व सुविधा एकाच ठिकाणी.
-    </p>
-</div>
+    <div class="hero">
+        <h2>Digital Services, Delivered with Trust 🙏</h2>
+        <p>
+            आधार, पॅन, सरकारी फॉर्म, परीक्षा अर्ज, प्रिंटिंग –  
+            सर्व सुविधा एकाच ठिकाणी.
+        </p>
 
-<div class="grid">
-    <div class="box"><span>🪪</span><br>Aadhaar / PAN</div>
-    <div class="box"><span>📄</span><br>Government Forms</div>
-    <div class="box"><span>🎓</span><br>Exam & Admission</div>
-    <div class="box"><span>🖨️</span><br>Print & Scan</div>
-    <div class="box"><span>💻</span><br>Online Work</div>
-    <div class="box"><span>📱</span><br>Digital Help</div>
-</div>
+        <div class="hero-cta">
+            <!-- CHANGE NUMBER HERE -->
+            <a href="tel:9876543210" class="cta cta-call">📞 Call Now</a>
+            <a href="https://wa.me/919876543210" class="cta cta-wa">💬 WhatsApp</a>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="box"><span>🪪</span>Aadhaar / PAN</div>
+        <div class="box"><span>📄</span>Government Forms</div>
+        <div class="box"><span>🎓</span>Exam & Admission</div>
+        <div class="box"><span>🖨️</span>Print & Scan</div>
+        <div class="box"><span>💻</span>Online Work</div>
+        <div class="box"><span>📱</span>Digital Help</div>
+    </div>
 
 </div>
 
