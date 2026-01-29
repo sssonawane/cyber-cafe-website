@@ -1,168 +1,181 @@
-/* ================= GLOBAL ================= */
+/* =========================
+   RESET
+========================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Arial, sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
+/* =========================
+   BASE
+========================= */
 body {
-  background: #f4f6f8;
-  color: #222;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f3f4f6;
+  color: #333;
   line-height: 1.6;
 }
 
-/* ================= HEADER ================= */
-header {
-  background: #137c3a;
+a {
+  text-decoration: none;
+}
+
+/* =========================
+   HEADER
+========================= */
+.cc-header {
+  background: #137c3b;
   color: #fff;
-  padding: 30px 15px 25px;
   text-align: center;
+  padding: 30px 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-.header-container h1 {
-  font-size: 36px;
-  margin-bottom: 8px;
+.cc-header h1 {
+  font-size: 34px;
+  margin-bottom: 5px;
 }
 
-.tagline {
+.cc-header .tagline {
   font-size: 14px;
-  opacity: 0.95;
+  opacity: 0.9;
 }
 
-.tagline .mr {
-  display: block;
+.cc-header .mr {
   font-size: 13px;
+  color: #eaffea;
   margin-top: 4px;
 }
 
-/* ================= MENU ================= */
-nav {
-  margin-top: 15px;
+/* =========================
+   NAVBAR
+========================= */
+.cc-nav {
+  margin-top: 12px;
 }
 
-nav a {
-  color: #ffffff;
-  text-decoration: none;
+.cc-nav a {
+  color: #fff;
   margin: 0 12px;
+  font-weight: 600;
   padding-bottom: 4px;
-  font-weight: 500;
-  border-bottom: 2px solid transparent;
-  transition: 0.3s;
 }
 
-nav a:hover,
-nav a.active {
+.cc-nav a.active,
+.cc-nav a:hover {
   border-bottom: 2px solid #ffffff;
 }
 
-/* ================= MAIN ================= */
-main {
+/* =========================
+   MAIN CONTAINER
+========================= */
+.container {
   max-width: 900px;
   margin: 40px auto;
   padding: 0 15px;
 }
 
-/* ================= CARD ================= */
+/* =========================
+   CARDS
+========================= */
 .card {
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 25px 28px;
-  margin-bottom: 30px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px 30px;
+  margin-bottom: 35px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
 .card h2 {
-  margin-bottom: 8px;
-  color: #137c3a;
+  color: #137c3b;
+  margin-bottom: 10px;
 }
 
-.section-sub {
+.card .mr {
   font-size: 14px;
   color: #555;
+  margin-top: 8px;
 }
 
-.card p {
-  margin-top: 12px;
-  font-size: 15px;
-}
-
-.mr {
-  color: #555;
-  font-size: 14px;
-}
-
-/* ================= SERVICES LIST ================= */
-ul {
+/* =========================
+   SERVICES LIST
+========================= */
+.card ul {
   margin-top: 15px;
   padding-left: 20px;
 }
 
-ul li {
-  margin-bottom: 14px;
-  font-size: 15px;
+.card ul li {
+  margin-bottom: 12px;
 }
 
-/* ================= CONTACT BUTTONS ================= */
+.card ul li span {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  margin-top: 3px;
+}
+
+/* =========================
+   CONTACT BUTTONS
+========================= */
 .contact-buttons {
-  margin-top: 20px;
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
+  margin-top: 18px;
 }
 
 .btn {
   display: inline-block;
   padding: 12px 22px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 600;
+  border-radius: 25px;
   color: #fff;
-  transition: transform 0.2s, box-shadow 0.2s;
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 14px;
 }
 
-.btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+.btn-call {
+  background: #1e63e9;
 }
 
-.btn.call {
-  background: #0b5ed7;
-}
-
-.btn.whatsapp {
+.btn-whatsapp {
   background: #25d366;
 }
 
-/* ================= FOOTER ================= */
+/* =========================
+   FOOTER
+========================= */
 footer {
   text-align: center;
-  padding: 18px;
   font-size: 13px;
-  color: #555;
+  color: #666;
+  margin: 30px 0;
 }
 
-/* ================= RESPONSIVE ================= */
+/* =========================
+   SMOOTH SCROLL
+========================= */
+html {
+  scroll-behavior: smooth;
+}
+
+/* =========================
+   MOBILE
+========================= */
 @media (max-width: 600px) {
-  .header-container h1 {
-    font-size: 28px;
+  .cc-header h1 {
+    font-size: 26px;
   }
 
-  nav a {
-    margin: 0 8px;
-    font-size: 14px;
-  }
-
-  .card {
-    padding: 20px;
+  .container {
+    margin: 25px auto;
   }
 
   .btn {
-    width: 100%;
+    display: block;
+    margin-bottom: 10px;
     text-align: center;
   }
 }
