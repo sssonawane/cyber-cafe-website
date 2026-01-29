@@ -1,198 +1,180 @@
-/* =========================
-   RESET
-========================= */
+/* ================= RESET ================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* =========================
-   BASE
-========================= */
+/* ================= BASE ================= */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: #f3f4f6;
+  background: #f4f6f8;
   color: #333;
   line-height: 1.6;
 }
 
-a {
-  text-decoration: none;
-}
-
-/* =========================
-   HEADER
-========================= */
-.cc-header {
-  background: #137c3b;
+/* ================= HEADER ================= */
+.header {
+  background: #137c3a;
   color: #fff;
   text-align: center;
-  padding: 30px 15px 20px;
+  padding: 30px 20px 20px;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
-.cc-header h1 {
+.header h1 {
   font-size: 34px;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 
-.cc-header .tagline {
+.tagline {
   font-size: 14px;
+  opacity: 0.95;
+}
+
+.tagline .mr {
+  display: block;
+  font-size: 13px;
   opacity: 0.9;
 }
 
-.cc-header .mr {
-  font-size: 13px;
-  color: #eaffea;
-  margin-top: 4px;
+/* ================= NAV ================= */
+.nav {
+  margin-top: 15px;
 }
 
-/* =========================
-   NAVBAR
-========================= */
-.cc-nav {
-  margin-top: 12px;
-}
-
-.cc-nav a {
+.nav a {
   color: #fff;
-  margin: 0 12px;
+  text-decoration: none;
+  margin: 0 14px;
   font-weight: 600;
   padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
 }
 
-.cc-nav a.active,
-.cc-nav a:hover {
+.nav a:hover,
+.nav a.active {
   border-bottom: 2px solid #ffffff;
 }
 
-/* =========================
-   MAIN CONTAINER
-========================= */
+/* ================= LAYOUT ================= */
 .container {
   max-width: 900px;
   margin: 40px auto;
   padding: 0 15px;
 }
 
-/* =========================
-   CARDS
-========================= */
+/* ================= CARD ================= */
 .card {
-  background: #fff;
-  border-radius: 10px;
-  padding: 25px 30px;
-  margin-bottom: 35px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px 28px;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 .card h2 {
-  color: #137c3b;
-  margin-bottom: 10px;
-}
-
-.card .mr {
-  font-size: 14px;
-  color: #555;
-  margin-top: 8px;
-}
-
-/* =========================
-   SERVICES LIST
-========================= */
-.card ul {
-  margin-top: 15px;
-  padding-left: 20px;
-}
-
-.card ul li {
+  color: #137c3a;
   margin-bottom: 12px;
 }
 
-.card ul li span {
-  display: block;
-  font-size: 14px;
-  color: #555;
-  margin-top: 3px;
+.card p {
+  margin-bottom: 12px;
 }
 
-/* =========================
-   CONTACT BUTTONS
-========================= */
+.mr {
+  font-size: 14px;
+  color: #555;
+}
+
+/* ================= SERVICES ================= */
+.services-list {
+  margin-top: 15px;
+  padding-left: 18px;
+}
+
+.services-list li {
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+
+.services-list .mr {
+  display: block;
+  font-weight: normal;
+  margin-top: 4px;
+}
+
+/* ================= CONTACT BUTTONS ================= */
 .contact-buttons {
   margin-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 .btn {
   display: inline-block;
   padding: 12px 22px;
-  border-radius: 25px;
-  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
   font-weight: bold;
-  margin-right: 10px;
-  font-size: 14px;
+  color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 .btn-call {
-  background: #1e63e9;
+  background: #0d6efd;
 }
 
 .btn-whatsapp {
   background: #25d366;
 }
 
-/* =========================
-   FOOTER
-========================= */
-footer {
-  text-align: center;
-  font-size: 13px;
-  color: #666;
-  margin: 30px 0;
-}
-
-/* =========================
-   SMOOTH SCROLL
-========================= */
-html {
-  scroll-behavior: smooth;
-}
-
-/* =========================
-   MOBILE
-========================= */
-@media (max-width: 600px) {
-  .cc-header h1 {
-    font-size: 26px;
-  }
-
-  .container {
-    margin: 25px auto;
-  }
-
-  .btn {
-    display: block;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-}/* =================
-   MAP
-================= */
+/* ================= MAP ================= */
 .map-box {
   margin-top: 20px;
-  width: 100%;
-  height: 300px;
   border-radius: 10px;
   overflow: hidden;
 }
 
 .map-box iframe {
   width: 100%;
-  height: 100%;
-  border: 0;
+  height: 220px;
+  border: none;
 }
 
+/* ================= FOOTER ================= */
+.footer {
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 13px;
+  color: #666;
+}
 
+/* ================= MOBILE ================= */
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 26px;
+  }
+
+  .nav a {
+    margin: 0 8px;
+    font-size: 14px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+}
