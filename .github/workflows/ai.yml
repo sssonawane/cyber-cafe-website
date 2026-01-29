@@ -6,7 +6,7 @@ on:
       - main
 
 permissions:
-  contents: write   # ⭐ GitHub ला push permission
+  contents: write   # GitHub Actions ला commit & push ची permission
 
 jobs:
   build:
@@ -16,7 +16,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0   # ⭐ commit/push साठी आवश्यक
+          fetch-depth: 0   # commit करण्यासाठी आवश्यक
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -24,13 +24,13 @@ jobs:
           python-version: "3.11"
 
       - name: Run AI generator
-        run: python ai_generator.py
+        run: |
+          python generated_algo.py
 
-      - name: Commit generated files
+      - name: Commit generated website files
         run: |
           git config user.name "ai-bot"
           git config user.email "ai-bot@users.noreply.github.com"
           git add index.html style.css
           git commit -m "🤖 AI auto-update website" || echo "No changes to commit"
           git push
-     
