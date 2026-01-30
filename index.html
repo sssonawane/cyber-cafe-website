@@ -113,6 +113,10 @@ nav a{
     grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
     gap:24px;
 }
+.service-link{
+    text-decoration:none;
+    color:inherit;
+}
 .box{
     background:#ffffff;
     border-radius:18px;
@@ -121,7 +125,7 @@ nav a{
     box-shadow:0 10px 22px rgba(0,0,0,.08);
     transition:.3s;
 }
-.box:hover{
+.service-link:hover .box{
     transform:translateY(-6px);
     box-shadow:0 20px 40px rgba(0,0,0,.12);
 }
@@ -207,7 +211,6 @@ footer{
                 </p>
 
                 <div class="hero-cta">
-                    <!-- CHANGE NUMBER -->
                     <a href="tel:9876543210" class="cta cta-call">📞 Call Now</a>
                     <a href="https://wa.me/919876543210" class="cta cta-wa">💬 WhatsApp</a>
                 </div>
@@ -220,30 +223,56 @@ footer{
         </div>
     </div>
 
-    <!-- SERVICES -->
+    <!-- SERVICES (CLICKABLE) -->
     <div class="grid">
 
-        <!-- Government -->
-        <div class="box"><span>🪪</span><h4>Aadhaar / PAN</h4></div>
-        <div class="box"><span>📄</span><h4>Income / Caste / Domicile</h4></div>
-        <div class="box"><span>🗳️</span><h4>Voter ID Services</h4></div>
+        <a href="services.html#aadhaar" class="service-link">
+            <div class="box"><span>🪪</span><h4>Aadhaar / PAN</h4></div>
+        </a>
 
-        <!-- Ration -->
-        <div class="box"><span>🟡</span><h4>Ration Card (New)</h4></div>
-        <div class="box"><span>➕➖</span><h4>Name Add / Remove</h4></div>
+        <a href="services.html#gov" class="service-link">
+            <div class="box"><span>📄</span><h4>Income / Caste / Domicile</h4></div>
+        </a>
 
-        <!-- Farmer -->
-        <div class="box"><span>🌾</span><h4>7/12 & Ferfar</h4></div>
-        <div class="box"><span>🚜</span><h4>Farmer Schemes</h4></div>
+        <a href="services.html#gov" class="service-link">
+            <div class="box"><span>🗳️</span><h4>Voter ID Services</h4></div>
+        </a>
 
-        <!-- Loan & Banking -->
-        <div class="box"><span>🏦</span><h4>Loan Guidance</h4></div>
-        <div class="box"><span>💳</span><h4>Banking Assistance</h4></div>
+        <a href="services.html#ration" class="service-link">
+            <div class="box"><span>🟡</span><h4>Ration Card (New)</h4></div>
+        </a>
 
-        <!-- Cyber Cafe -->
-        <div class="box"><span>🎓</span><h4>Exam & Admission</h4></div>
-        <div class="box"><span>🖨️</span><h4>Print / Scan / Xerox</h4></div>
-        <div class="box"><span>💻</span><h4>Online & Digital Help</h4></div>
+        <a href="services.html#ration" class="service-link">
+            <div class="box"><span>➕➖</span><h4>Name Add / Remove</h4></div>
+        </a>
+
+        <a href="services.html#farmer" class="service-link">
+            <div class="box"><span>🌾</span><h4>7/12 & Ferfar</h4></div>
+        </a>
+
+        <a href="services.html#farmer" class="service-link">
+            <div class="box"><span>🚜</span><h4>Farmer Schemes</h4></div>
+        </a>
+
+        <a href="services.html#loan" class="service-link">
+            <div class="box"><span>🏦</span><h4>Loan Guidance</h4></div>
+        </a>
+
+        <a href="services.html#loan" class="service-link">
+            <div class="box"><span>💳</span><h4>Banking Assistance</h4></div>
+        </a>
+
+        <a href="services.html#exam" class="service-link">
+            <div class="box"><span>🎓</span><h4>Exam & Admission</h4></div>
+        </a>
+
+        <a href="services.html#print" class="service-link">
+            <div class="box"><span>🖨️</span><h4>Print / Scan / Xerox</h4></div>
+        </a>
+
+        <a href="services.html#online" class="service-link">
+            <div class="box"><span>💻</span><h4>Online & Digital Help</h4></div>
+        </a>
 
     </div>
 
