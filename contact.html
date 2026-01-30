@@ -3,69 +3,215 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Contact | Cyber Cafe</title>
+<meta name="description" content="Contact Cyber Cafe – Call, WhatsApp, Location & Office Timings. Trusted Digital Service Center.">
 
 <style>
-body{margin:0;font-family:Segoe UI;background:#eef3ff}
-header{background:#0a4da3;color:#fff;text-align:center;padding:25px}
-nav{background:#fff;display:flex;justify-content:center;gap:35px;padding:14px}
-nav a{text-decoration:none;color:#0a4da3;font-weight:600}
-.container{max-width:800px;margin:auto;padding:30px}
-.card{
-    background:#fff;
-    border-radius:16px;
-    padding:30px;
-    margin-bottom:25px;
-    text-align:center;
-    box-shadow:0 12px 25px rgba(0,0,0,.1);
+body{
+    margin:0;
+    font-family:'Segoe UI', sans-serif;
+    background:linear-gradient(135deg,#eef4ff,#f9fcff);
 }
-.btn{
-    display:inline-block;
-    margin:10px;
-    padding:15px 30px;
-    border-radius:30px;
+
+/* HEADER */
+header{
+    background:linear-gradient(90deg,#0a4da3,#007bff);
+    padding:14px 10px;
+    text-align:center;
     color:#fff;
+}
+.logo{
+    font-size:26px;
+    font-weight:700;
+}
+.logo small{
+    display:block;
+    font-size:13px;
+    opacity:.9;
+}
+
+/* NAV */
+nav{
+    background:#fff;
+    display:flex;
+    justify-content:center;
+    gap:32px;
+    padding:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+nav a{
     text-decoration:none;
+    color:#0a4da3;
     font-weight:600;
 }
-.call{background:#28a745}
-.whatsapp{background:#25D366}
-footer{background:#0a4da3;color:#fff;text-align:center;padding:18px}
+
+/* CONTAINER */
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:30px 20px;
+}
+
+/* CONTACT CARD */
+.contact-box{
+    background:#fff;
+    border-radius:18px;
+    padding:35px;
+    box-shadow:0 14px 28px rgba(0,0,0,.1);
+}
+.contact-box h2{
+    margin-top:0;
+    color:#0a4da3;
+}
+.contact-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+    margin-top:25px;
+}
+.item{
+    background:#f7faff;
+    border-radius:14px;
+    padding:20px;
+}
+.item h4{
+    margin:0 0 8px;
+    color:#0a4da3;
+}
+
+/* CTA */
+.cta{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:12px 24px;
+    margin:6px 6px 0 0;
+    border-radius:30px;
+    text-decoration:none;
+    color:#fff;
+    font-weight:600;
+}
+.cta-call{background:#28a745}
+.cta-wa{background:#25D366}
+
+/* MAP */
+.map{
+    margin-top:35px;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+.map iframe{
+    width:100%;
+    height:320px;
+    border:0;
+}
+
+/* FOOTER */
+footer{
+    margin-top:55px;
+    background:#0a4da3;
+    color:#fff;
+    padding:25px 15px;
+    text-align:center;
+    font-size:14px;
+}
+footer .f-links{
+    margin-bottom:10px;
+}
+footer a{
+    color:#fff;
+    text-decoration:none;
+    margin:0 8px;
+}
+
+/* FLOATING WHATSAPP */
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:#fff;
+    font-size:26px;
+    padding:14px 16px;
+    border-radius:50%;
+    text-decoration:none;
+    box-shadow:0 4px 12px rgba(0,0,0,.3);
+}
 </style>
 </head>
 
 <body>
 
 <header>
-<h1>Contact Us / संपर्क करा</h1>
+    <div class="logo">
+        🖥️ Cyber Cafe
+        <small>आपले सरकार सेवा केंद्र</small>
+    </div>
 </header>
 
 <nav>
-<a href="index.html">Home</a>
-<a href="services.html">Services</a>
-<a href="contact.html">Contact</a>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
 </nav>
 
 <div class="container">
 
-<div class="card">
-<a class="btn call" href="tel:9876543210">📞 Call</a>
-<a class="btn whatsapp" href="https://wa.me/919876543210">💬 WhatsApp</a>
+    <div class="contact-box">
+        <h2>📞 Contact Us</h2>
+        <p>खालील माध्यमांद्वारे आमच्याशी संपर्क साधा.</p>
+
+        <div class="contact-grid">
+
+            <div class="item">
+                <h4>📍 Address</h4>
+                <p>
+                    सिंहस्थ नगर, CIDCO,<br>
+                    नाशिक, महाराष्ट्र
+                </p>
+            </div>
+
+            <div class="item">
+                <h4>⏰ Office Timing</h4>
+                <p>
+                    सकाळी 9:00 ते<br>
+                    संध्याकाळी 7:00
+                </p>
+            </div>
+
+            <div class="item">
+                <h4>📲 Call / WhatsApp</h4>
+                <!-- CHANGE NUMBER -->
+                <a href="tel:9876543210" class="cta cta-call">📞 Call Now</a>
+                <a href="https://wa.me/919876543210" class="cta cta-wa">💬 WhatsApp</a>
+            </div>
+
+        </div>
+
+        <!-- MAP -->
+        <div class="map">
+            <!-- OPTIONAL: Replace src with your exact Google Map embed -->
+            <iframe 
+            src="https://www.google.com/maps?q=CIDCO%20Nashik&output=embed"
+            loading="lazy"></iframe>
+        </div>
+
+    </div>
+
 </div>
 
-<div class="card">
-<p>📍 सिंहस्थ नगर, CIDCO, नाशिक</p>
-<p>⏰ 9 AM – 7 PM</p>
-</div>
+<footer>
+    <div class="f-links">
+        <a href="index.html">Home</a> |
+        <a href="services.html">Services</a> |
+        <a href="contact.html">Contact</a>
+    </div>
+    © 2026 Cyber Cafe | All Rights Reserved
+</footer>
 
-<div class="card">
-<iframe src="https://www.google.com/maps?q=CIDCO%20Nashik&output=embed"
-width="100%" height="280" style="border:0;border-radius:14px"></iframe>
-</div>
-
-</div>
-
-<footer>© 2026 Cyber Cafe</footer>
+<a class="whatsapp" href="https://wa.me/919876543210">💬</a>
 
 </body>
 </html>
