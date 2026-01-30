@@ -89,6 +89,12 @@ nav a{
     grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
     gap:22px;
 }
+
+/* CLICKABLE CARD */
+.card-link{
+    text-decoration:none;
+    color:inherit;
+}
 .card{
     background:#f9fbff;
     border-radius:18px;
@@ -96,7 +102,7 @@ nav a{
     text-align:center;
     transition:.3s;
 }
-.card:hover{
+.card-link:hover .card{
     transform:translateY(-5px);
     background:#ffffff;
     box-shadow:0 14px 30px rgba(0,0,0,.12);
@@ -107,8 +113,12 @@ nav a{
     margin-bottom:10px;
 }
 .card h4{
-    margin:6px 0 0;
+    margin:6px 0 6px;
     font-size:15px;
+}
+.card small{
+    font-size:13px;
+    color:#2e7d32;
 }
 
 /* FOOTER */
@@ -157,60 +167,78 @@ footer{
     <!-- TITLE -->
     <div class="page-title">
         <h2>Our Services</h2>
-        <p>सरकारी, शेतकरी, सायबर कॅफे व डिजिटल सेवा – एकाच ठिकाणी</p>
+        <p>सेवेवर क्लिक करा आणि थेट WhatsApp वर संपर्क साधा</p>
     </div>
 
     <!-- GOVERNMENT -->
-    <div id="gov" class="section">
+    <div class="section">
         <h3>📄 Government Services</h3>
         <div class="grid">
-            <div class="card"><span>📄</span><h4>Income Certificate</h4></div>
-            <div class="card"><span>🧾</span><h4>Caste Certificate</h4></div>
-            <div class="card"><span>🏠</span><h4>Domicile Certificate</h4></div>
-            <div class="card"><span>🗳️</span><h4>Voter ID</h4></div>
-            <div class="card"><span>🪪</span><h4>Aadhaar / PAN</h4></div>
+
+            <a class="card-link" href="https://wa.me/919876543210?text=मला%20Income%20Certificate%20बाबत%20माहिती%20हवी%20आहे">
+                <div class="card"><span>📄</span><h4>Income Certificate</h4><small>Tap to WhatsApp</small></div>
+            </a>
+
+            <a class="card-link" href="https://wa.me/919876543210?text=मला%20Caste%20Certificate%20बाबत%20माहिती%20हवी%20आहे">
+                <div class="card"><span>🧾</span><h4>Caste Certificate</h4><small>Tap to WhatsApp</small></div>
+            </a>
+
+            <a class="card-link" href="https://wa.me/919876543210?text=मला%20Domicile%20Certificate%20बाबत%20माहिती%20हवी%20आहे">
+                <div class="card"><span>🏠</span><h4>Domicile Certificate</h4><small>Tap to WhatsApp</small></div>
+            </a>
+
+            <a class="card-link" href="https://wa.me/919876543210?text=मला%20Voter%20ID%20सेवा%20बाबत%20माहिती%20हवी%20आहे">
+                <div class="card"><span>🗳️</span><h4>Voter ID</h4><small>Tap to WhatsApp</small></div>
+            </a>
+
         </div>
     </div>
 
     <!-- RATION -->
-    <div id="ration" class="section">
+    <div class="section">
         <h3>🟡 Ration Card Services</h3>
         <div class="grid">
-            <div class="card"><span>🟡</span><h4>New Ration Card</h4></div>
-            <div class="card"><span>➕➖</span><h4>Name Add / Remove</h4></div>
-            <div class="card"><span>🏠</span><h4>Address Change</h4></div>
+
+            <a class="card-link" href="https://wa.me/919876543210?text=मला%20नवीन%20Ration%20Card%20बाबत%20माहिती%20हवी%20आहे">
+                <div class="card"><span>🟡</span><h4>New Ration Card</h4><small>Tap to WhatsApp</small></div>
+            </a>
+
+            <a class="card-link" href="https://wa.me/919876543210?text=Ration%20Card%20मध्ये%20नाव%20वाढ%20कमी%20करायचे%20आहे">
+                <div class="card"><span>➕➖</span><h4>Name Add / Remove</h4><small>Tap to WhatsApp</small></div>
+            </a>
+
         </div>
     </div>
 
     <!-- FARMER -->
-    <div id="farmer" class="section">
+    <div class="section">
         <h3>🌾 Farmer Services</h3>
         <div class="grid">
-            <div class="card"><span>🌾</span><h4>7/12 Utara</h4></div>
-            <div class="card"><span>📝</span><h4>Ferfar / Mutation</h4></div>
-            <div class="card"><span>🚜</span><h4>Farmer Schemes</h4></div>
-            <div class="card"><span>🌧️</span><h4>Crop Insurance</h4></div>
-        </div>
-    </div>
 
-    <!-- LOAN -->
-    <div id="loan" class="section">
-        <h3>🏦 Loan & Banking Guidance</h3>
-        <div class="grid">
-            <div class="card"><span>🏠</span><h4>Home Loan Guidance</h4></div>
-            <div class="card"><span>🏍️</span><h4>Two Wheeler Loan</h4></div>
-            <div class="card"><span>💳</span><h4>Banking Assistance</h4></div>
+            <a class="card-link" href="https://wa.me/919876543210?text=मला%207/12%20Utara%20बाबत%20माहिती%20हवी%20आहे">
+                <div class="card"><span>🌾</span><h4>7/12 Utara</h4><small>Tap to WhatsApp</small></div>
+            </a>
+
+            <a class="card-link" href="https://wa.me/919876543210?text=मला%20Ferfar%20बाबत%20माहिती%20हवी%20आहे">
+                <div class="card"><span>📝</span><h4>Ferfar / Mutation</h4><small>Tap to WhatsApp</small></div>
+            </a>
+
         </div>
     </div>
 
     <!-- CYBER -->
-    <div id="exam" class="section">
+    <div class="section">
         <h3>🖥️ Cyber Cafe Services</h3>
         <div class="grid">
-            <div class="card"><span>🎓</span><h4>Exam / Admission Forms</h4></div>
-            <div class="card"><span>🖨️</span><h4>Print / Scan / Xerox</h4></div>
-            <div class="card"><span>📄</span><h4>PDF & Online Work</h4></div>
-            <div class="card"><span>📱</span><h4>Digital Help</h4></div>
+
+            <a class="card-link" href="https://wa.me/919876543210?text=Exam%20Form%20भरायचा%20आहे">
+                <div class="card"><span>🎓</span><h4>Exam / Admission Forms</h4><small>Tap to WhatsApp</small></div>
+            </a>
+
+            <a class="card-link" href="https://wa.me/919876543210?text=Print%20Scan%20Xerox%20सेवा%20हवी%20आहे">
+                <div class="card"><span>🖨️</span><h4>Print / Scan / Xerox</h4><small>Tap to WhatsApp</small></div>
+            </a>
+
         </div>
     </div>
 
