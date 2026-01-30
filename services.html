@@ -3,40 +3,42 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Services | Cyber Cafe</title>
+<meta name="description" content="Cyber Cafe Services – Aadhaar, PAN, Government Certificates, Exam Forms, Printing, Online Work.">
 
 <style>
 body{
     margin:0;
-    font-family:'Segoe UI',sans-serif;
+    font-family:'Segoe UI', sans-serif;
     background:linear-gradient(135deg,#eef4ff,#f9fcff);
 }
 
-/* Header */
+/* HEADER */
 header{
     background:linear-gradient(90deg,#0a4da3,#007bff);
-    color:#fff;
-    padding:22px 15px;
+    padding:14px 10px;
     text-align:center;
+    color:#fff;
 }
 .logo{
-    font-size:28px;
+    font-size:26px;
     font-weight:700;
 }
 .logo small{
     display:block;
-    font-size:14px;
+    font-size:13px;
     opacity:.9;
 }
 
-/* Navbar */
+/* NAV */
 nav{
-    background:#ffffff;
+    background:#fff;
     display:flex;
     justify-content:center;
-    gap:35px;
-    padding:14px;
-    box-shadow:0 4px 12px rgba(0,0,0,.08);
+    gap:32px;
+    padding:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
 }
 nav a{
     text-decoration:none;
@@ -44,96 +46,72 @@ nav a{
     font-weight:600;
 }
 
-/* Layout */
+/* CONTAINER */
 .container{
     max-width:1100px;
     margin:auto;
-    padding:35px 20px;
+    padding:30px 20px;
 }
 
-/* Hero CTA */
-.hero{
-    background:#ffffffcc;
-    backdrop-filter:blur(8px);
-    border-radius:16px;
-    padding:35px;
-    text-align:center;
-    box-shadow:0 15px 30px rgba(0,0,0,.1);
-}
-.hero h2{
-    margin-top:0;
-    color:#0a4da3;
-}
-.hero-cta{
-    margin-top:22px;
-}
-.cta{
-    display:inline-block;
-    padding:12px 24px;
-    margin:8px;
-    border-radius:25px;
-    text-decoration:none;
-    color:#fff;
-    font-weight:600;
-}
-.cta-call{background:#28a745}
-.cta-wa{background:#25D366}
-
-/* Service Grid */
+/* GRID */
 .grid{
-    margin-top:45px;
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-    gap:25px;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:22px;
 }
-.box{
+
+/* CLICKABLE CARD */
+.card{
     background:#fff;
-    border-radius:14px;
-    padding:28px 22px;
+    border-radius:16px;
+    padding:26px 22px;
     text-align:center;
-    box-shadow:0 10px 20px rgba(0,0,0,.08);
-    transition:all .3s ease;
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+    transition:.3s;
+    text-decoration:none;
+    color:#000;
 }
-.box:hover{
+.card:hover{
     transform:translateY(-6px);
     box-shadow:0 18px 35px rgba(0,0,0,.12);
 }
-.box span{
-    font-size:32px;
+.card span{
+    font-size:30px;
     display:block;
     margin-bottom:10px;
 }
-.box h4{
-    margin:10px 0 8px;
+.card h4{
+    margin:6px 0;
+    font-size:16px;
     color:#0a4da3;
 }
-.box p{
+.card p{
     margin:0;
     font-size:14px;
-    line-height:1.5;
+    opacity:.85;
 }
 
-/* Footer */
+/* SECTION DETAIL */
+.section{
+    margin-top:55px;
+    background:#fff;
+    border-radius:18px;
+    padding:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+.section h3{
+    margin-top:0;
+    color:#0a4da3;
+}
+
+/* FOOTER */
 footer{
-    margin-top:60px;
+    margin-top:55px;
     background:#0a4da3;
     color:#fff;
     text-align:center;
     padding:18px;
-}
-
-/* Floating WhatsApp */
-.whatsapp{
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    background:#25D366;
-    color:#fff;
-    font-size:28px;
-    padding:15px 17px;
-    border-radius:50%;
-    text-decoration:none;
-    box-shadow:0 4px 12px rgba(0,0,0,.3);
+    font-size:14px;
 }
 </style>
 </head>
@@ -155,66 +133,81 @@ footer{
 
 <div class="container">
 
-    <!-- HERO -->
-    <div class="hero">
-        <h2>Our Services / आमच्या सेवा</h2>
-        <p>सर्व Digital, Government आणि Printing सेवा एकाच ठिकाणी</p>
-
-        <div class="hero-cta">
-            <!-- CHANGE NUMBER HERE -->
-            <a href="tel:9876543210" class="cta cta-call">📞 Call Now</a>
-            <a href="https://wa.me/919876543210" class="cta cta-wa">💬 WhatsApp</a>
-        </div>
-    </div>
-
-    <!-- SERVICES GRID -->
+    <!-- CLICKABLE SERVICES -->
     <div class="grid">
-
-        <div class="box">
+        <a href="#aadhaar" class="card">
             <span>🪪</span>
             <h4>Aadhaar / PAN</h4>
-            <p>Apply, Update, Correction, Download, Linking</p>
-        </div>
+            <p>Apply • Update • Correction</p>
+        </a>
 
-        <div class="box">
+        <a href="#gov" class="card">
             <span>📄</span>
-            <h4>Government Forms</h4>
-            <p>Income, Caste, Domicile, Non-Creamy, E-Shram</p>
-        </div>
+            <h4>Government Certificates</h4>
+            <p>Income • Caste • Domicile</p>
+        </a>
 
-        <div class="box">
+        <a href="#exam" class="card">
             <span>🎓</span>
             <h4>Exam & Admission</h4>
-            <p>Online Forms, Hall Ticket, Result, College Admission</p>
-        </div>
+            <p>Forms • Hall Ticket • Result</p>
+        </a>
 
-        <div class="box">
+        <a href="#print" class="card">
             <span>🖨️</span>
             <h4>Print & Scan</h4>
-            <p>Color / B&W Print, Scan, Xerox, Lamination</p>
-        </div>
+            <p>Color • B/W • Xerox</p>
+        </a>
 
-        <div class="box">
+        <a href="#online" class="card">
             <span>💻</span>
             <h4>Online Work</h4>
-            <p>Email, Online Application, PDF Work</p>
-        </div>
+            <p>Forms • PDF • Email</p>
+        </a>
 
-        <div class="box">
+        <a href="#digital" class="card">
             <span>📱</span>
             <h4>Digital Help</h4>
-            <p>Mobile Banking, App Install, KYC Support</p>
-        </div>
+            <p>Mobile • App • KYC</p>
+        </a>
+    </div>
 
+    <!-- DETAILS SECTIONS -->
+    <div id="aadhaar" class="section">
+        <h3>🪪 Aadhaar / PAN Services</h3>
+        <p>Aadhaar update, correction, mobile linking, PAN apply & download सुविधा उपलब्ध.</p>
+    </div>
+
+    <div id="gov" class="section">
+        <h3>📄 Government Certificates</h3>
+        <p>Income Certificate, Caste Certificate (Category-wise), Domicile Certificate व इतर शासकीय सेवा.</p>
+    </div>
+
+    <div id="exam" class="section">
+        <h3>🎓 Exam & Admission</h3>
+        <p>Online exam forms, hall ticket, result checking, college admission assistance.</p>
+    </div>
+
+    <div id="print" class="section">
+        <h3>🖨️ Print & Scan</h3>
+        <p>Color / Black & White printing, scanning, xerox, lamination.</p>
+    </div>
+
+    <div id="online" class="section">
+        <h3>💻 Online Work</h3>
+        <p>Online application, PDF work, email, form filling.</p>
+    </div>
+
+    <div id="digital" class="section">
+        <h3>📱 Digital Help</h3>
+        <p>Mobile banking help, app install, KYC support.</p>
     </div>
 
 </div>
 
 <footer>
-    © 2026 Cyber Cafe | Designed with ❤️
+    © 2026 Cyber Cafe | All Rights Reserved
 </footer>
-
-<a class="whatsapp" href="https://wa.me/919876543210">💬</a>
 
 </body>
 </html>
