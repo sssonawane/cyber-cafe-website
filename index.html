@@ -4,20 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Cyber Cafe | Government & Online Services</title>
-
-<meta name="description" content="Cyber Cafe – Aadhaar, PAN, Government Forms, Exam Forms, Printing, Online Services. Fast & trusted digital services.">
+<title>Cyber Cafe | Government & Digital Services</title>
+<meta name="description" content="Cyber Cafe – Aadhaar, PAN, Government Forms, Exam Forms, Printing & Online Services. Trusted local service center.">
 
 <style>
 body{
     margin:0;
-    font-family: 'Segoe UI', sans-serif;
-    background:linear-gradient(135deg,#eef4ff,#f9fcff);
+    font-family:'Segoe UI', sans-serif;
+    background:linear-gradient(135deg,#f4f8ff,#fbfdff);
 }
 
 /* HEADER */
 header{
-    background:linear-gradient(90deg,#0a4da3,#007bff);
+    background:linear-gradient(90deg,#0a4da3,#1e88e5);
     padding:14px 10px;
     text-align:center;
     color:#fff;
@@ -34,7 +33,7 @@ header{
 
 /* NAVBAR */
 nav{
-    background:#fff;
+    background:#ffffff;
     display:flex;
     justify-content:center;
     gap:32px;
@@ -51,22 +50,36 @@ nav a{
 .container{
     max-width:1100px;
     margin:auto;
-    padding:30px 20px;
+    padding:35px 20px;
 }
 
 /* HERO */
 .hero{
-    background:#ffffffcc;
-    backdrop-filter:blur(6px);
-    border-radius:18px;
-    padding:38px 30px;
-    text-align:center;
-    box-shadow:0 14px 28px rgba(0,0,0,.1);
+    background:#ffffff;
+    border-radius:22px;
+    padding:40px 35px;
+    box-shadow:0 18px 40px rgba(0,0,0,.08);
+}
+.hero-inner{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:30px;
+    flex-wrap:wrap;
+}
+.hero-text{
+    max-width:650px;
 }
 .hero h2{
     margin-top:0;
     color:#0a4da3;
     font-size:26px;
+}
+.hero-marathi{
+    font-size:16px;
+    font-weight:600;
+    color:#2e7d32;
+    margin:10px 0;
 }
 .hero p{
     font-size:15px;
@@ -88,25 +101,29 @@ nav a{
 }
 .cta-call{background:#28a745}
 .cta-wa{background:#25D366}
+.hero-illu{
+    font-size:64px;
+    opacity:.85;
+}
 
-/* SERVICES GRID */
+/* SERVICES */
 .grid{
-    margin-top:45px;
+    margin-top:55px;
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-    gap:22px;
+    gap:24px;
 }
 .box{
-    background:#fff;
-    border-radius:16px;
-    padding:26px 22px;
+    background:#ffffff;
+    border-radius:18px;
+    padding:28px 22px;
     text-align:center;
-    box-shadow:0 8px 18px rgba(0,0,0,.08);
+    box-shadow:0 10px 22px rgba(0,0,0,.08);
     transition:.3s;
 }
 .box:hover{
     transform:translateY(-6px);
-    box-shadow:0 18px 35px rgba(0,0,0,.12);
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
 }
 .box span{
     font-size:30px;
@@ -120,11 +137,11 @@ nav a{
 
 /* FOOTER */
 footer{
-    margin-top:55px;
+    margin-top:60px;
     background:#0a4da3;
     color:#fff;
     text-align:center;
-    padding:18px;
+    padding:20px;
     font-size:14px;
 }
 
@@ -140,6 +157,17 @@ footer{
     border-radius:50%;
     text-decoration:none;
     box-shadow:0 4px 12px rgba(0,0,0,.3);
+}
+
+/* MOBILE */
+@media(max-width:768px){
+    .hero-inner{
+        flex-direction:column;
+        text-align:center;
+    }
+    .hero-illu{
+        font-size:56px;
+    }
 }
 </style>
 </head>
@@ -163,16 +191,31 @@ footer{
 
     <!-- HERO -->
     <div class="hero">
-        <h2>Digital Services, Delivered with Trust 🙏</h2>
-        <p>
-            आधार, पॅन, सरकारी फॉर्म, परीक्षा अर्ज, प्रिंटिंग –  
-            सर्व डिजिटल सुविधा एकाच ठिकाणी.
-        </p>
+        <div class="hero-inner">
 
-        <div class="hero-cta">
-            <!-- CHANGE NUMBER -->
-            <a href="tel:9876543210" class="cta cta-call">📞 Call Now</a>
-            <a href="https://wa.me/919876543210" class="cta cta-wa">💬 WhatsApp</a>
+            <div class="hero-text">
+                <h2>Digital Services, Delivered with Trust 🙏</h2>
+
+                <p class="hero-marathi">
+                    तुमचं काम – आमची जबाबदारी 🙂
+                </p>
+
+                <p>
+                    आधार, पॅन, सरकारी फॉर्म, परीक्षा अर्ज, प्रिंटिंग –  
+                    सर्व डिजिटल सुविधा एकाच ठिकाणी, शांत आणि विश्वासार्ह पद्धतीने.
+                </p>
+
+                <div class="hero-cta">
+                    <!-- CHANGE NUMBER -->
+                    <a href="tel:9876543210" class="cta cta-call">📞 Call Now</a>
+                    <a href="https://wa.me/919876543210" class="cta cta-wa">💬 WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="hero-illu">
+                🤝📄💻
+            </div>
+
         </div>
     </div>
 
