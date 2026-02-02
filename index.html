@@ -85,6 +85,7 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
+      margin-bottom: 40px;
     }
 
     .card {
@@ -97,6 +98,32 @@
     .card h3 {
       color: #1976d2;
       margin-bottom: 10px;
+    }
+
+    /* Testimonials */
+    .testimonials {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    .testimonial-card {
+      background: #ffffff;
+      padding: 22px;
+      border-radius: 14px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .testimonial-card p {
+      font-style: italic;
+      margin-bottom: 12px;
+    }
+
+    .testimonial-card span {
+      font-weight: 600;
+      color: #0d47a1;
     }
 
     footer {
@@ -146,26 +173,35 @@
     <section class="services">
       <div class="card">
         <h3>Government Services</h3>
-        <p>
-          आधार, पॅन कार्ड, जात प्रमाणपत्र, उत्पन्न प्रमाणपत्र,
-          ऑनलाइन अर्ज.
-        </p>
+        <p>आधार, पॅन कार्ड, जात प्रमाणपत्र, उत्पन्न प्रमाणपत्र, ऑनलाइन अर्ज.</p>
       </div>
 
       <div class="card">
         <h3>Education Services</h3>
-        <p>
-          Admission Forms, Scholarships, Exam Forms,
-          Online Applications.
-        </p>
+        <p>Admission Forms, Scholarships, Exam Forms, Online Applications.</p>
       </div>
 
       <div class="card">
         <h3>Printing & Scanning</h3>
-        <p>
-          Black & White / Color Print, Scan,
-          Lamination, Xerox.
-        </p>
+        <p>Black & White / Color Print, Scan, Lamination, Xerox.</p>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <div class="testimonial-card">
+        <p>“काम जलद व विश्वासार्ह आहे.”</p>
+        <span>– शेतकरी</span>
+      </div>
+
+      <div class="testimonial-card">
+        <p>“WhatsApp अपडेट खूप सोयीचे आहेत.”</p>
+        <span>– विद्यार्थी</span>
+      </div>
+
+      <div class="testimonial-card">
+        <p>“सरकारी कामासाठी योग्य ठिकाण.”</p>
+        <span>– स्थानिक नागरिक</span>
       </div>
     </section>
 
