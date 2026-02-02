@@ -1,83 +1,269 @@
-<section class="services">
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Cyber Cafe</title>
 
-  <!-- Income Certificate -->
-  <div class="service">
-    <div class="icon">📄</div>
-    <h3>उत्पन्न दाखला<br><small>Income Certificate</small></h3>
-    <a class="wa" target="_blank"
-       href="https://wa.me/919000000000?text=उत्पन्न%20दाखला%20(Income%20Certificate)%20साठी%20लागणारी%20कागदपत्रे%20पाठवा">💬</a>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* ===== RESET ===== */
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      background:#f3f6fb;
+      color:#1f2937;
+    }
+
+    /* ===== HEADER ===== */
+    header{
+      background:linear-gradient(120deg,#0b4db8,#1e88e5);
+      color:#fff;
+      text-align:center;
+      padding:40px 20px;
+    }
+
+    header h1{
+      font-size:30px;
+      margin-bottom:6px;
+    }
+
+    header p{
+      font-size:14px;
+      opacity:0.95;
+    }
+
+    /* ===== NAV ===== */
+    nav{
+      background:#ffffff;
+      display:flex;
+      justify-content:center;
+      gap:26px;
+      padding:12px;
+      box-shadow:0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    nav a{
+      text-decoration:none;
+      color:#0b4db8;
+      font-size:14px;
+      font-weight:500;
+    }
+
+    nav a:hover{
+      color:#1e88e5;
+    }
+
+    /* ===== CONTAINER ===== */
+    .container{
+      max-width:1100px;
+      margin:auto;
+      padding:45px 20px;
+    }
+
+    .title{
+      text-align:center;
+      margin-bottom:40px;
+    }
+
+    .title h2{
+      font-size:24px;
+      color:#0b4db8;
+      margin-bottom:6px;
+    }
+
+    .title p{
+      font-size:14px;
+      color:#555;
+    }
+
+    /* ===== SERVICES GRID ===== */
+    .services{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+      gap:30px;
+      justify-items:center;
+    }
+
+    .service{
+      width:100%;
+      max-width:210px;
+      background:#ffffff;
+      border-radius:18px;
+      padding:22px 16px 24px;
+      text-align:center;
+      box-shadow:0 10px 28px rgba(0,0,0,0.08);
+      transition:transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .service:hover{
+      transform:translateY(-6px);
+      box-shadow:0 18px 45px rgba(0,0,0,0.15);
+    }
+
+    .icon{
+      font-size:38px;
+      margin-bottom:8px;
+    }
+
+    .service h3{
+      font-size:14px;
+      font-weight:500;
+      line-height:1.4;
+      margin-bottom:14px;
+    }
+
+    .service small{
+      display:block;
+      font-size:12px;
+      color:#555;
+    }
+
+    /* ===== WHATSAPP BUTTON ===== */
+    .wa{
+      display:inline-flex;
+      width:42px;
+      height:42px;
+      align-items:center;
+      justify-content:center;
+      background:#25D366;
+      color:#fff;
+      border-radius:50%;
+      text-decoration:none;
+      font-size:20px;
+      box-shadow:0 6px 18px rgba(37,211,102,0.45);
+      transition:transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .wa:hover{
+      transform:scale(1.15);
+      box-shadow:0 10px 25px rgba(37,211,102,0.6);
+    }
+
+    /* ===== FOOTER ===== */
+    footer{
+      margin-top:70px;
+      background:linear-gradient(120deg,#0b4db8,#1e88e5);
+      color:#fff;
+      text-align:center;
+      padding:16px;
+      font-size:13px;
+    }
+
+    /* ===== MOBILE ===== */
+    @media(max-width:600px){
+      header h1{
+        font-size:26px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Our Services</h1>
+  <p>आम्ही देत असलेल्या सर्व सरकारी व ऑनलाईन सेवा</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+
+  <div class="title">
+    <h2>सेवा निवडा</h2>
+    <p>Click करा आणि थेट WhatsApp वर संपर्क साधा</p>
   </div>
 
-  <!-- Caste Certificate -->
-  <div class="service">
-    <div class="icon">🪪</div>
-    <h3>जात प्रमाणपत्र<br><small>Caste Certificate</small></h3>
-    <a class="wa" target="_blank"
-       href="https://wa.me/919000000000?text=जात%20प्रमाणपत्र%20(Caste%20Certificate)%20साठी%20कागदपत्रे%20पाठवा">💬</a>
-  </div>
+  <section class="services">
 
-  <!-- PAN Card -->
-  <div class="service">
-    <div class="icon">💳</div>
-    <h3>पॅन कार्ड<br><small>PAN Card</small></h3>
-    <a class="wa" target="_blank"
-       href="https://wa.me/919000000000?text=PAN%20Card%20साठी%20माहिती%20हवी%20आहे">💬</a>
-  </div>
+    <div class="service">
+      <div class="icon">📄</div>
+      <h3>उत्पन्न दाखला<br><small>Income Certificate</small></h3>
+      <a class="wa" target="_blank"
+         href="https://wa.me/919XXXXXXXXX?text=उत्पन्न%20दाखला%20साठी%20लागणारी%20कागदपत्रे%20पाठवा">💬</a>
+    </div>
 
-  <!-- Domicile -->
-  <div class="service">
-    <div class="icon">🏠</div>
-    <h3>रहिवासी दाखला<br><small>Domicile Certificate</small></h3>
-    <a class="wa" target="_blank"
-       href="https://wa.me/919000000000?text=रहिवासी%20दाखला%20(Domicile)%20साठी%20कागदपत्रे%20पाठवा">💬</a>
-  </div>
+    <div class="service">
+      <div class="icon">🪪</div>
+      <h3>जात प्रमाणपत्र<br><small>Caste Certificate</small></h3>
+      <a class="wa" target="_blank"
+         href="https://wa.me/919XXXXXXXXX?text=जात%20प्रमाणपत्र%20साठी%20कागदपत्रे%20पाठवा">💬</a>
+    </div>
 
-  <!-- Non-Creamy Layer -->
-  <div class="service">
-    <div class="icon">📑</div>
-    <h3>नॉन क्रीमी लेयर<br><small>Non-Creamy Layer</small></h3>
-    <a class="wa" target="_blank"
-       href="https://wa.me/919000000000?text=Non%20Creamy%20Layer%20Certificate%20साठी%20कागदपत्रे%20पाठवा">💬</a>
-  </div>
+    <div class="service">
+      <div class="icon">💳</div>
+      <h3>पॅन कार्ड<br><small>PAN Card</small></h3>
+      <a class="wa" target="_blank"
+         href="https://wa.me/919XXXXXXXXX?text=PAN%20Card%20साठी%20माहिती%20हवी%20आहे">💬</a>
+    </div>
 
-  <!-- Scholarship -->
-  <div class="service">
-    <div class="icon">🎓</div>
-    <h3>शिष्यवृत्ती<br><small>Scholarship</small></h3>
-    <a class="wa" target="_blank"
-       href="https://wa.me/919000000000?text=Scholarship%20साठी%20माहिती%20हवी%20आहे">💬</a>
-  </div>
+    <div class="service">
+      <div class="icon">🏠</div>
+      <h3>रहिवासी दाखला<br><small>Domicile Certificate</small></h3>
+      <a class="wa" target="_blank"
+         href="https://wa.me/919XXXXXXXXX?text=रहिवासी%20दाखला%20साठी%20कागदपत्रे%20पाठवा">💬</a>
+    </div>
 
-  <!-- Aadhaar -->
-  <div class="service">
-    <div class="icon">🆔</div>
-    <h3>आधार सेवा<br><small>Aadhaar Services</small></h3>
-    <a class="wa" target="_blank"
-       href="https://wa.me/919000000000?text=Aadhaar%20Update%20/Enrollment%20साठी%20माहिती%20हवी%20आहे">💬</a>
-  </div>
+    <div class="service">
+      <div class="icon">📑</div>
+      <h3>नॉन क्रीमी लेयर<br><small>Non-Creamy Layer</small></h3>
+      <a class="wa" target="_blank"
+         href="https://wa.me/919XXXXXXXXX?text=Non%20Creamy%20Layer%20Certificate%20साठी%20कागदपत्रे%20पाठवा">💬</a>
+    </div>
 
-  <!-- Voter ID -->
-  <div class="service">
-    <div class="icon">🗳️</div>
-    <h3>मतदार ओळखपत्र<br><small>Voter ID</small></h3>
-    <a class="wa" target="_blank"
-       href="https://wa.me/919000000000?text=Voter%20ID%20साठी%20माहिती%20हवी%20आहे">💬</a>
-  </div>
+    <div class="service">
+      <div class="icon">🎓</div>
+      <h3>शिष्यवृत्ती<br><small>Scholarship</small></h3>
+      <a class="wa" target="_blank"
+         href="https://wa.me/919XXXXXXXXX?text=Scholarship%20साठी%20माहिती%20हवी%20आहे">💬</a>
+    </div>
 
-  <!-- Printing -->
-  <div class="service">
-    <div class="icon">🖨️</div>
-    <h3>प्रिंटिंग / झेरॉक्स<br><small>Printing / Xerox</small></h3>
-    <a class="wa" target="_blank"
-       href="https://wa.me/919000000000?text=Printing%20/Xerox%20साठी%20माहिती%20हवी%20आहे">💬</a>
-  </div>
+    <div class="service">
+      <div class="icon">🆔</div>
+      <h3>आधार सेवा<br><small>Aadhaar Services</small></h3>
+      <a class="wa" target="_blank"
+         href="https://wa.me/919XXXXXXXXX?text=Aadhaar%20Update%20साठी%20माहिती%20हवी%20आहे">💬</a>
+    </div>
 
-  <!-- Online Forms -->
-  <div class="service">
-    <div class="icon">🌐</div>
-    <h3>ऑनलाईन अर्ज<br><small>Online Form Filling</small></h3>
-    <a class="wa" target="_blank"
-       href="https://wa.me/919000000000?text=Online%20Form%20Filling%20साठी%20माहिती%20हवी%20आहे">💬</a>
-  </div>
+    <div class="service">
+      <div class="icon">🗳️</div>
+      <h3>मतदार ओळखपत्र<br><small>Voter ID</small></h3>
+      <a class="wa" target="_blank"
+         href="https://wa.me/919XXXXXXXXX?text=Voter%20ID%20साठी%20माहिती%20हवी%20आहे">💬</a>
+    </div>
 
-</section>
+    <div class="service">
+      <div class="icon">🖨️</div>
+      <h3>प्रिंटिंग / झेरॉक्स<br><small>Printing / Xerox</small></h3>
+      <a class="wa" target="_blank"
+         href="https://wa.me/919XXXXXXXXX?text=Printing%20/Xerox%20साठी%20माहिती%20हवी%20आहे">💬</a>
+    </div>
+
+    <div class="service">
+      <div class="icon">🌐</div>
+      <h3>ऑनलाईन अर्ज<br><small>Online Form Filling</small></h3>
+      <a class="wa" target="_blank"
+         href="https://wa.me/919XXXXXXXXX?text=Online%20Form%20Filling%20साठी%20माहिती%20हवी%20आहे">💬</a>
+    </div>
+
+  </section>
+
+</div>
+
+<footer>
+  © 2026 Cyber Cafe. All Rights Reserved.
+</footer>
+
+</body>
+</html>
