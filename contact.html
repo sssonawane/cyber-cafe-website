@@ -1,158 +1,193 @@
 <!DOCTYPE html>
 <html lang="mr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Cyber Cafe</title>
 
-<title>Contact | Cyber Cafe & Digital Seva</title>
-<meta name="description" content="Contact Cyber Cafe for Government Services, Aadhaar, PAN, Ration Card, PM Kisan, MAHA DBT, Banking & Online Work. Call or WhatsApp us.">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-<style>
-body{
-    margin:0;
-    font-family:'Segoe UI',sans-serif;
-    background:#f5f8ff;
-    color:#222;
-}
-header{
-    background:linear-gradient(90deg,#0a4da3,#1e88e5);
-    padding:16px;
-    text-align:center;
-    color:#fff;
-}
-nav{
-    background:#fff;
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    padding:12px;
-    box-shadow:0 3px 10px rgba(0,0,0,.08);
-}
-nav a{
-    text-decoration:none;
-    color:#0a4da3;
-    font-weight:600;
-}
-.container{
-    max-width:1000px;
-    margin:auto;
-    padding:40px 20px;
-}
-h2{
-    color:#0a4da3;
-    margin-bottom:12px;
-}
-.contact-box{
-    background:#fff;
-    border-radius:20px;
-    padding:30px;
-    box-shadow:0 14px 32px rgba(0,0,0,.08);
-}
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:25px;
-}
-.info{
-    font-size:15px;
-}
-.info p{
-    margin:10px 0;
-}
-.btn{
-    display:inline-block;
-    margin-top:12px;
-    padding:12px 24px;
-    border-radius:30px;
-    text-decoration:none;
-    font-weight:600;
-    color:#fff;
-}
-.btn-call{background:#28a745;}
-.btn-wa{background:#25D366;}
-.note{
-    margin-top:25px;
-    font-size:14px;
-    color:#444;
-    background:#f0f6ff;
-    padding:15px;
-    border-radius:12px;
-}
-footer{
-    background:#0a4da3;
-    color:#fff;
-    text-align:center;
-    padding:20px;
-    margin-top:50px;
-}
-.whatsapp{
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    background:#25D366;
-    color:#fff;
-    font-size:26px;
-    padding:14px 16px;
-    border-radius:50%;
-    text-decoration:none;
-    box-shadow:0 4px 12px rgba(0,0,0,.3);
-}
-</style>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f5f7fa;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0d47a1, #1976d2);
+      color: #fff;
+      padding: 35px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+
+    nav {
+      background: #ffffff;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #0d47a1;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #1976d2;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    .contact-box {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    }
+
+    .contact-box h2 {
+      color: #0d47a1;
+      margin-bottom: 15px;
+    }
+
+    .contact-box p {
+      margin-bottom: 10px;
+      line-height: 1.7;
+    }
+
+    .contact-details {
+      margin-top: 25px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card h3 {
+      color: #1976d2;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #fff;
+      font-size: 14px;
+    }
+
+    .btn-call {
+      background: #0d47a1;
+    }
+
+    .btn-whatsapp {
+      background: #25D366;
+    }
+
+    footer {
+      background: #0d47a1;
+      color: #fff;
+      text-align: center;
+      padding: 14px;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+  </style>
 </head>
-
 <body>
 
-<header>
-<h1>Contact Us</h1>
-<p>We are here to help you</p>
-</header>
+  <!-- Header -->
+  <header>
+    <h1>Contact Us</h1>
+    <p>संपर्क साधा | Call or WhatsApp for Quick Support</p>
+  </header>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="services.html">Services</a>
-<a href="contact.html">Contact</a>
-</nav>
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-<div class="container">
+  <!-- Main Content -->
+  <div class="container">
+    <div class="contact-box">
+      <h2>आमच्याशी संपर्क करा | Get in Touch</h2>
+      <p>
+        आमच्या Cyber Cafe मधील सर्व ऑनलाईन व सरकारी सेवा
+        जलद आणि विश्वासार्ह पद्धतीने करून मिळवण्यासाठी
+        खालील माध्यमांद्वारे आमच्याशी संपर्क साधा.
+      </p>
+      <p>
+        For any online services, government forms, printing,
+        scanning or assistance, feel free to call or WhatsApp us.
+      </p>
 
-<div class="contact-box">
-<div class="grid">
+      <!-- Contact Details -->
+      <div class="contact-details">
 
-<div class="info">
-<h2>📍 Cyber Cafe & Digital Seva</h2>
-<p><strong>Services:</strong> Government, Aadhaar, PAN, Ration Card, PM-Kisan, MAHA DBT, Banking, Online Work</p>
+        <!-- Phone -->
+        <div class="card">
+          <h3>📞 Call Us</h3>
+          <p>Mobile: <strong>90000 00000</strong></p>
+          <a href="tel:9000000000" class="btn btn-call">Call Now</a>
+        </div>
 
-<p><strong>📞 Phone:</strong> 7721091856</p>
+        <!-- WhatsApp -->
+        <div class="card">
+          <h3>💬 WhatsApp</h3>
+          <p>Quick Support on WhatsApp</p>
+          <a href="https://wa.me/919000000000" target="_blank" class="btn btn-whatsapp">
+            Chat on WhatsApp
+          </a>
+        </div>
 
-<a class="btn btn-call" href="tel:7721091856">📞 Call Now</a><br>
+        <!-- Address -->
+        <div class="card">
+          <h3>📍 Address</h3>
+          <p>
+            Cyber Cafe,<br>
+            Main Road,<br>
+            Your City – 000000
+          </p>
+        </div>
 
-<a class="btn btn-wa" target="_blank"
-href="https://wa.me/917721091856?text=नमस्कार,%20मला%20तुमच्या%20Cyber%20Cafe%20सेवांसाठी%20माहिती%20हवी%20आहे.">
-💬 WhatsApp Now
-</a>
-</div>
+      </div>
+    </div>
+  </div>
 
-<div class="info">
-<h2>🕘 Working Hours</h2>
-<p>सोमवार – शनिवार</p>
-<p><strong>9:00 AM – 7:00 PM</strong></p>
-
-<div class="note">
-📌 कृपया आवश्यक कागदपत्रांसह भेट द्या.<br>
-📌 WhatsApp वर आधी मेसेज केल्यास काम लवकर होते.
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-
-<footer>
-© 2026 Cyber Cafe & Digital Seva | All Rights Reserved
-</footer>
-
-<a class="whatsapp" href="https://wa.me/917721091856" target="_blank">💬</a>
+  <!-- Footer -->
+  <footer>
+    © 2026 Cyber Cafe. All Rights Reserved.
+  </footer>
 
 </body>
 </html>
