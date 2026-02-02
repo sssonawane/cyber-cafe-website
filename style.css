@@ -43,3 +43,31 @@
 .whatsapp-cta:hover {
   background: #1ebe5d;
 }
+
+/* WhatsApp CTA inside service card */
+.card {
+  position: relative;
+  padding-bottom: 60px; /* space for WhatsApp button */
+}
+
+.whatsapp-btn {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #25D366;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 6px 15px rgba(37, 211, 102, 0.35);
+}
+
+.whatsapp-btn:hover {
+  background: #1ebe5d;
+}
