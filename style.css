@@ -1,81 +1,197 @@
-/* ===== Testimonials Section ===== */
+<style>
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+header {
+  background: linear-gradient(135deg, #0d47a1, #1976d2);
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+header p {
+  font-size: 15px;
+  opacity: 0.95;
+}
+
+/* ===== NAV ===== */
+nav {
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+nav a {
+  text-decoration: none;
+  color: #0d47a1;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #1976d2;
+}
+
+/* ===== CONTAINER (IMPORTANT FIX) ===== */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 35px 20px;
+  overflow: visible;   /* 🔥 services cut होणार नाही */
+}
+
+/* ===== HERO ===== */
+.hero {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.06);
+  margin-bottom: 35px;
+}
+
+.hero h2 {
+  color: #0d47a1;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  margin-bottom: 8px;
+}
+
+/* ===== SERVICES ===== */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.service-card,
+.card {
+  background: #ffffff;
+  padding: 26px 22px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover,
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+}
+
+.service-card h3,
+.card h3 {
+  color: #1976d2;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.service-card ul {
+  padding-left: 18px;
+}
+
+.service-card ul li {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+/* ===== TESTIMONIALS ===== */
 .testimonials {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 25px;
-  margin: 50px 0;
+  margin: 40px 0;
 }
 
-/* Card */
 .testimonial-card {
   background: #ffffff;
-  padding: 30px 25px;
+  padding: 28px 24px;
   border-radius: 18px;
   text-align: center;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .testimonial-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  transform: translateY(-10px);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.15);
 }
 
-/* Animated Icon */
+/* ICON ANIMATION */
 .testimonial-card .icon {
-  font-size: 48px;
-  margin-bottom: 15px;
+  font-size: 46px;
+  margin-bottom: 14px;
   display: inline-block;
-  animation: floatIcon 3s ease-in-out infinite;
+  animation: iconFloat 2.8s ease-in-out infinite;
 }
 
-/* Different animation delay */
-.testimonial-card:nth-child(1) .icon {
-  animation-delay: 0s;
-}
-.testimonial-card:nth-child(2) .icon {
-  animation-delay: 0.5s;
-}
-.testimonial-card:nth-child(3) .icon {
-  animation-delay: 1s;
-}
+.testimonial-card:nth-child(1) .icon { animation-delay: 0s; }
+.testimonial-card:nth-child(2) .icon { animation-delay: 0.4s; }
+.testimonial-card:nth-child(3) .icon { animation-delay: 0.8s; }
 
-/* Quote Text */
 .testimonial-card p {
-  font-size: 15px;
   font-style: italic;
+  font-size: 15px;
   color: #444;
-  margin-bottom: 12px;
-  line-height: 1.6;
+  margin-bottom: 10px;
 }
 
-/* Name */
 .testimonial-card span {
-  font-size: 14px;
   font-weight: 600;
   color: #0d47a1;
 }
 
-/* Animation Keyframes */
-@keyframes floatIcon {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
+/* KEYFRAMES */
+@keyframes iconFloat {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
 }
 
-/* Mobile Fine-tune */
+/* ===== FOOTER ===== */
+footer {
+  background: #0d47a1;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 60px;
+  font-size: 14px;
+}
+
+/* ===== MOBILE ===== */
 @media (max-width: 600px) {
-  .testimonial-card {
-    padding: 25px 20px;
+  header h1 {
+    font-size: 26px;
+  }
+
+  .hero {
+    padding: 22px;
   }
 
   .testimonial-card .icon {
-    font-size: 42px;
+    font-size: 40px;
   }
 }
+</style>
