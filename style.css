@@ -150,4 +150,24 @@ footer {
     font-size: 18px;
   }
 }
-</style>
+</style>.wa{
+  width:44px;
+  height:44px;
+  border-radius:50%;
+  background:#25D366;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  box-shadow:0 6px 18px rgba(37,211,102,0.45);
+  position:relative;
+}
+
+.wa::after{
+  content:"☎";
+  color:#fff;
+  font-size:20px;
+  transform:rotate(-15deg);
+}
+
+
