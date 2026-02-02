@@ -71,3 +71,38 @@
 .whatsapp-btn:hover {
   background: #1ebe5d;
 }
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  text-align: center;
+}
+
+.service-item {
+  background: #ffffff;
+  padding: 22px 16px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.service-icon {
+  font-size: 38px;
+  margin-bottom: 8px;
+}
+
+.service-item p {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.wa-icon img {
+  width: 36px;
+  height: 36px;
+  transition: transform 0.2s ease;
+}
+
+.wa-icon img:hover {
+  transform: scale(1.1);
+}
+
