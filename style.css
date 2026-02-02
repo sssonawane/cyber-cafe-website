@@ -1,189 +1,81 @@
-/* ================= RESET ================= */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* ===== Testimonials Section ===== */
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin: 50px 0;
 }
 
-/* ================= BASE ================= */
-html {
-  scroll-behavior: smooth;
+/* Card */
+.testimonial-card {
+  background: #ffffff;
+  padding: 30px 25px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f4f6f8;
-  color: #333;
+.testimonial-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Animated Icon */
+.testimonial-card .icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+  display: inline-block;
+  animation: floatIcon 3s ease-in-out infinite;
+}
+
+/* Different animation delay */
+.testimonial-card:nth-child(1) .icon {
+  animation-delay: 0s;
+}
+.testimonial-card:nth-child(2) .icon {
+  animation-delay: 0.5s;
+}
+.testimonial-card:nth-child(3) .icon {
+  animation-delay: 1s;
+}
+
+/* Quote Text */
+.testimonial-card p {
+  font-size: 15px;
+  font-style: italic;
+  color: #444;
+  margin-bottom: 12px;
   line-height: 1.6;
 }
 
-/* ================= HEADER ================= */
-.header {
-  background: #137c3a;
-  color: #fff;
-  text-align: center;
-  padding: 30px 20px 20px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.header h1 {
-  font-size: 34px;
-  margin-bottom: 6px;
-}
-
-.tagline {
+/* Name */
+.testimonial-card span {
   font-size: 14px;
-  opacity: 0.95;
-}
-
-.tagline .mr {
-  display: block;
-  font-size: 13px;
-  opacity: 0.9;
-}
-
-/* ================= NAV ================= */
-.nav {
-  margin-top: 15px;
-}
-
-.nav a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 14px;
   font-weight: 600;
-  padding-bottom: 4px;
-  border-bottom: 2px solid transparent;
-  transition: all 0.3s ease;
+  color: #0d47a1;
 }
 
-.nav a:hover,
-.nav a.active {
-  border-bottom: 2px solid #ffffff;
+/* Animation Keyframes */
+@keyframes floatIcon {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
-/* ================= LAYOUT ================= */
-.container {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 0 15px;
-}
-
-/* ================= CARD ================= */
-.card {
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 25px 28px;
-  margin-bottom: 40px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-}
-
-.card h2 {
-  color: #137c3a;
-  margin-bottom: 12px;
-}
-
-.card p {
-  margin-bottom: 12px;
-}
-
-.mr {
-  font-size: 14px;
-  color: #555;
-}
-
-/* ================= SERVICES ================= */
-.services-list {
-  margin-top: 15px;
-  padding-left: 18px;
-}
-
-.services-list li {
-  margin-bottom: 14px;
-  font-weight: 600;
-}
-
-.services-list .mr {
-  display: block;
-  font-weight: normal;
-  margin-top: 4px;
-}
-
-/* ================= CONTACT BUTTONS ================= */
-.contact-buttons {
-  margin-top: 18px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-.btn {
-  display: inline-block;
-  padding: 12px 22px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-  color: #fff;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-}
-
-.btn-call {
-  background: #0d6efd;
-}
-
-.btn-whatsapp {
-  background: #25d366;
-}
-
-/* ================= MAP ================= */
-.map-box {
-  margin-top: 20px;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.map-box iframe {
-  width: 100%;
-  height: 220px;
-  border: none;
-}
-
-/* ================= FOOTER ================= */
-.footer {
-  text-align: center;
-  padding: 20px 10px;
-  font-size: 13px;
-  color: #666;
-}
-
-/* ================= MOBILE ================= */
+/* Mobile Fine-tune */
 @media (max-width: 600px) {
-  .header h1 {
-    font-size: 26px;
+  .testimonial-card {
+    padding: 25px 20px;
   }
 
-  .nav a {
-    margin: 0 8px;
-    font-size: 14px;
-  }
-
-  .card {
-    padding: 20px;
+  .testimonial-card .icon {
+    font-size: 42px;
   }
 }
-.card {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
-}
-
