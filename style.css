@@ -1,117 +1,134 @@
 <style>
-/* ===== RESET ===== */
+/* ===============================
+   CYBER CAFE – SIGNATURE UI STYLE
+   (Exclusive • Handcrafted)
+================================ */
+
+/* ----- Base Reset ----- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', system-ui, sans-serif;
 }
 
 body {
-  background: #f5f7fa;
-  color: #333;
-  line-height: 1.6;
+  background: linear-gradient(180deg, #f7f9fc 0%, #eef3f9 100%);
+  color: #1f2937;
+  line-height: 1.7;
 }
 
-/* ===== HEADER ===== */
+/* ----- Header ----- */
 header {
-  background: linear-gradient(135deg, #0d47a1, #1976d2);
+  background: linear-gradient(120deg, #0b4db8, #1e88e5);
   color: #fff;
-  padding: 40px 20px;
+  padding: 42px 20px;
   text-align: center;
 }
 
 header h1 {
-  font-size: 32px;
-  margin-bottom: 8px;
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
 }
 
 header p {
+  margin-top: 6px;
   font-size: 15px;
   opacity: 0.95;
 }
 
-/* ===== NAV ===== */
+/* ----- Navigation ----- */
 nav {
-  background: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(10px);
   display: flex;
   justify-content: center;
-  gap: 25px;
-  padding: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  gap: 28px;
+  padding: 14px;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 
 nav a {
   text-decoration: none;
-  color: #0d47a1;
+  font-size: 14px;
   font-weight: 500;
-}
-
-nav a:hover {
-  color: #1976d2;
-}
-
-/* ===== CONTAINER (IMPORTANT FIX) ===== */
-.container {
-  max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 35px 20px;
-
-  /* FIX */
-  height: auto;
-  min-height: auto;
-  overflow: visible;
+  color: #0b4db8;
   position: relative;
 }
 
-/* ===== HERO ===== */
-.hero {
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 14px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.06);
-  margin-bottom: 35px;
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #1e88e5;
+  transition: width 0.3s ease;
 }
 
-.hero h2 {
-  color: #0d47a1;
-  margin-bottom: 12px;
+nav a:hover::after {
+  width: 100%;
 }
 
-.hero p {
-  margin-bottom: 8px;
+/* ----- Container (NO CUT EVER) ----- */
+.container {
+  max-width: 1150px;
+  margin: auto;
+  padding: 45px 20px;
+  overflow: visible;
 }
 
-/* ===== SERVICES ===== */
+/* ----- Section Heading ----- */
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title h2 {
+  font-size: 26px;
+  color: #0b4db8;
+  font-weight: 600;
+}
+
+.section-title p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* ----- Services Grid ----- */
 .services {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
-  margin-top: 20px;
-  margin-bottom: 50px;
+  gap: 28px;
+  align-items: stretch;
 }
 
-.service-card,
-.card {
+.service-card {
   background: #ffffff;
-  padding: 26px 22px;
-  border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 18px;
+  padding: 26px 24px;
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.06),
+    inset 0 0 0 1px rgba(0,0,0,0.04);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
-.service-card:hover,
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow:
+    0 20px 45px rgba(0,0,0,0.12),
+    inset 0 0 0 1px rgba(30,136,229,0.25);
 }
 
-.service-card h3,
-.card h3 {
-  color: #1976d2;
-  margin-bottom: 10px;
-  font-size: 18px;
+.service-card h3 {
+  font-size: 17px;
+  margin-bottom: 12px;
+  color: #1e88e5;
 }
 
 .service-card ul {
@@ -123,81 +140,86 @@ nav a:hover {
   margin-bottom: 6px;
 }
 
-/* ===== TESTIMONIALS ===== */
+/* ----- Testimonials ----- */
 .testimonials {
+  margin-top: 70px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
-  margin: 40px 0;
+  gap: 26px;
 }
 
 .testimonial-card {
-  background: #ffffff;
-  padding: 28px 24px;
-  border-radius: 18px;
+  background: linear-gradient(180deg, #ffffff, #f9fbff);
+  border-radius: 20px;
+  padding: 30px 26px;
   text-align: center;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 14px 40px rgba(0,0,0,0.08);
+  position: relative;
+  overflow: hidden;
 }
 
-.testimonial-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 45px rgba(0,0,0,0.15);
+.testimonial-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top, rgba(30,136,229,0.15), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
 }
 
-/* ICON ANIMATION */
+.testimonial-card:hover::before {
+  opacity: 1;
+}
+
 .testimonial-card .icon {
-  font-size: 46px;
+  font-size: 44px;
   margin-bottom: 14px;
   display: inline-block;
-  animation: iconFloat 2.8s ease-in-out infinite;
+  animation: softFloat 3s ease-in-out infinite;
 }
 
-.testimonial-card:nth-child(1) .icon { animation-delay: 0s; }
-.testimonial-card:nth-child(2) .icon { animation-delay: 0.4s; }
-.testimonial-card:nth-child(3) .icon { animation-delay: 0.8s; }
-
 .testimonial-card p {
-  font-style: italic;
   font-size: 15px;
-  color: #444;
+  font-style: italic;
+  color: #374151;
   margin-bottom: 10px;
 }
 
 .testimonial-card span {
+  font-size: 14px;
   font-weight: 600;
-  color: #0d47a1;
+  color: #0b4db8;
 }
 
-/* KEYFRAMES */
-@keyframes iconFloat {
+/* Animation */
+@keyframes softFloat {
   0%   { transform: translateY(0); }
-  50%  { transform: translateY(-12px); }
+  50%  { transform: translateY(-14px); }
   100% { transform: translateY(0); }
 }
 
-/* ===== FOOTER ===== */
+/* ----- Footer ----- */
 footer {
-  background: #0d47a1;
+  margin-top: 80px;
+  background: linear-gradient(120deg, #0b4db8, #1e88e5);
   color: #fff;
   text-align: center;
-  padding: 15px;
-  margin-top: 60px;
-  font-size: 14px;
+  padding: 18px;
+  font-size: 13px;
 }
 
-/* ===== MOBILE ===== */
+/* ----- Mobile Polish ----- */
 @media (max-width: 600px) {
   header h1 {
     font-size: 26px;
   }
 
-  .hero {
-    padding: 22px;
+  .section-title h2 {
+    font-size: 22px;
   }
 
   .testimonial-card .icon {
-    font-size: 40px;
+    font-size: 38px;
   }
 }
 </style>
