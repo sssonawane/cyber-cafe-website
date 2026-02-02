@@ -1,65 +1,63 @@
 <style>
-/* =========================
-   GLOBAL RESET
-========================= */
+/* =================================================
+   CYBER CAFE – STABLE SERVICE CONNECT STYLE
+   (Exclusive | Emoji Based | GitHub Safe)
+================================================= */
+
+/* ---------- RESET ---------- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", system-ui, sans-serif;
 }
 
 body {
-  background: #f5f7fa;
-  color: #333;
+  background: #f3f6fb;
+  color: #1f2937;
   line-height: 1.6;
 }
 
-/* =========================
-   HEADER
-========================= */
+/* ---------- HEADER ---------- */
 header {
-  background: linear-gradient(135deg, #0d47a1, #1976d2);
+  background: linear-gradient(120deg, #0b4db8, #1e88e5);
   color: #fff;
-  padding: 40px 20px;
   text-align: center;
+  padding: 42px 20px;
 }
 
 header h1 {
   font-size: 32px;
-  margin-bottom: 8px;
+  font-weight: 600;
 }
 
 header p {
-  font-size: 15px;
+  font-size: 14px;
   opacity: 0.95;
 }
 
-/* =========================
-   NAVIGATION
-========================= */
+/* ---------- NAV ---------- */
 nav {
   background: #ffffff;
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 26px;
   padding: 12px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
 nav a {
   text-decoration: none;
-  color: #0d47a1;
+  font-size: 14px;
   font-weight: 500;
+  color: #0b4db8;
 }
 
 nav a:hover {
-  color: #1976d2;
+  color: #1e88e5;
 }
 
-/* =========================
-   CONTAINER
-========================= */
+/* ---------- CONTAINER ---------- */
 .container {
   max-width: 1100px;
   margin: auto;
@@ -67,95 +65,76 @@ nav a:hover {
   overflow: visible;
 }
 
-/* =========================
-   HERO / WELCOME
-========================= */
-.hero {
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 14px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.06);
-  margin-bottom: 40px;
-}
-
-.hero h2 {
-  color: #0d47a1;
-  margin-bottom: 12px;
-}
-
-/* =========================
-   SERVICES GRID (OLD STYLE)
-========================= */
+/* ---------- SERVICES GRID ---------- */
 .services {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
   gap: 30px;
-  text-align: center;
+  justify-items: center;
 }
 
-/* =========================
-   SERVICE ITEM (ICON BASED)
-========================= */
+/* ---------- SERVICE ITEM ---------- */
 .service-item {
+  width: 100%;
+  max-width: 210px;
   background: #ffffff;
-  padding: 22px 16px;
   border-radius: 18px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 22px 16px 20px;
+  text-align: center;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .service-item:hover {
   transform: translateY(-6px);
-  box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+  box-shadow: 0 18px 45px rgba(0,0,0,0.15);
 }
 
-/* Service Icon (Income, Caste etc.) */
+/* ---------- SERVICE ICON ---------- */
 .service-icon {
   font-size: 38px;
   margin-bottom: 6px;
 }
 
-/* Service Name */
+/* ---------- SERVICE NAME ---------- */
 .service-item p {
   font-size: 14px;
   font-weight: 500;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 }
 
-/* =========================
-   WHATSAPP ICON (CRITICAL FIX)
-========================= */
-.wa-icon {
-  display: inline-block;
+/* ---------- WHATSAPP CONNECT (SAFE) ---------- */
+.wa-btn {
+  display: inline-flex;
+  width: 42px;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  background: #25D366;
+  color: #ffffff;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 20px;
+  box-shadow: 0 6px 18px rgba(37,211,102,0.45);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.wa-icon img {
-  width: 34px;       /* 🔥 FIX */
-  height: 34px;      /* 🔥 FIX */
-  display: block;
-  margin: auto;
-  transition: transform 0.2s ease;
-}
-
-.wa-icon img:hover {
+.wa-btn:hover {
   transform: scale(1.15);
+  box-shadow: 0 10px 25px rgba(37,211,102,0.6);
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* ---------- FOOTER ---------- */
 footer {
-  background: #0d47a1;
+  margin-top: 70px;
+  background: linear-gradient(120deg, #0b4db8, #1e88e5);
   color: #fff;
   text-align: center;
-  padding: 15px;
-  margin-top: 60px;
-  font-size: 14px;
+  padding: 16px;
+  font-size: 13px;
 }
 
-/* =========================
-   MOBILE TWEAKS
-========================= */
+/* ---------- MOBILE ---------- */
 @media (max-width: 600px) {
   header h1 {
     font-size: 26px;
@@ -163,6 +142,12 @@ footer {
 
   .service-icon {
     font-size: 34px;
+  }
+
+  .wa-btn {
+    width: 38px;
+    height: 38px;
+    font-size: 18px;
   }
 }
 </style>
