@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us | Cyber Cafe</title>
+  <title>Contact | Cyber Cafe</title>
 
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
@@ -19,25 +19,33 @@
     body {
       background: #f5f7fa;
       color: #333;
+      line-height: 1.6;
     }
 
+    /* Header */
     header {
       background: linear-gradient(135deg, #0d47a1, #1976d2);
       color: #fff;
-      padding: 35px 20px;
+      padding: 40px 20px;
       text-align: center;
     }
 
     header h1 {
-      font-size: 30px;
-      margin-bottom: 8px;
+      font-size: 32px;
+      margin-bottom: 6px;
     }
 
+    header p {
+      font-size: 15px;
+      opacity: 0.95;
+    }
+
+    /* Nav */
     nav {
       background: #ffffff;
       display: flex;
       justify-content: center;
-      gap: 20px;
+      gap: 25px;
       padding: 12px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.08);
     }
@@ -52,56 +60,60 @@
       color: #1976d2;
     }
 
+    /* Container */
     .container {
-      max-width: 1000px;
+      max-width: 1100px;
       margin: auto;
-      padding: 30px 20px;
+      padding: 40px 20px;
     }
 
-    .contact-box {
+    /* Intro */
+    .intro {
       background: #ffffff;
       padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+      border-radius: 16px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.06);
+      margin-bottom: 40px;
     }
 
-    .contact-box h2 {
+    .intro h2 {
       color: #0d47a1;
-      margin-bottom: 15px;
-    }
-
-    .contact-box p {
       margin-bottom: 10px;
-      line-height: 1.7;
     }
 
-    .contact-details {
-      margin-top: 25px;
+    /* Contact Cards */
+    .contact-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
     }
 
-    .card {
-      border: 1px solid #e0e0e0;
-      border-radius: 10px;
-      padding: 20px;
+    .contact-card {
+      background: #ffffff;
+      padding: 28px 22px;
+      border-radius: 18px;
       text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
     }
 
-    .card h3 {
+    .contact-card h3 {
       color: #1976d2;
       margin-bottom: 10px;
     }
 
+    .contact-card p {
+      margin-bottom: 12px;
+      font-size: 14px;
+    }
+
     .btn {
       display: inline-block;
-      margin-top: 10px;
       padding: 10px 18px;
-      border-radius: 6px;
+      border-radius: 8px;
       text-decoration: none;
       color: #fff;
       font-size: 14px;
+      font-weight: 500;
     }
 
     .btn-call {
@@ -112,12 +124,13 @@
       background: #25D366;
     }
 
+    /* Footer */
     footer {
       background: #0d47a1;
       color: #fff;
       text-align: center;
-      padding: 14px;
-      margin-top: 40px;
+      padding: 15px;
+      margin-top: 60px;
       font-size: 14px;
     }
   </style>
@@ -127,7 +140,7 @@
   <!-- Header -->
   <header>
     <h1>Contact Us</h1>
-    <p>संपर्क साधा | Call or WhatsApp for Quick Support</p>
+    <p>आमच्याशी संपर्क करा | Get in Touch</p>
   </header>
 
   <!-- Navigation -->
@@ -137,51 +150,51 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <!-- Main Content -->
+  <!-- Main -->
   <div class="container">
-    <div class="contact-box">
-      <h2>आमच्याशी संपर्क करा | Get in Touch</h2>
+
+    <!-- Intro -->
+    <section class="intro">
+      <h2>आमच्याशी संपर्क साधा</h2>
       <p>
-        आमच्या Cyber Cafe मधील सर्व ऑनलाईन व सरकारी सेवा
-        जलद आणि विश्वासार्ह पद्धतीने करून मिळवण्यासाठी
+        आमच्या Cyber Cafe मधील सर्व ऑनलाइन व सरकारी सेवा
+        जलद आणि विश्वासार्ह पद्धतीने करून घेण्यासाठी
         खालील माध्यमांद्वारे आमच्याशी संपर्क साधा.
       </p>
       <p>
         For any online services, government forms, printing,
         scanning or assistance, feel free to call or WhatsApp us.
       </p>
+    </section>
 
-      <!-- Contact Details -->
-      <div class="contact-details">
+    <!-- Contact Options -->
+    <section class="contact-grid">
 
-        <!-- Phone -->
-        <div class="card">
-          <h3>📞 Call Us</h3>
-          <p>Mobile: <strong>90000 00000</strong></p>
-          <a href="tel:9000000000" class="btn btn-call">Call Now</a>
-        </div>
-
-        <!-- WhatsApp -->
-        <div class="card">
-          <h3>💬 WhatsApp</h3>
-          <p>Quick Support on WhatsApp</p>
-          <a href="https://wa.me/919000000000" target="_blank" class="btn btn-whatsapp">
-            Chat on WhatsApp
-          </a>
-        </div>
-
-        <!-- Address -->
-        <div class="card">
-          <h3>📍 Address</h3>
-          <p>
-            Cyber Cafe,<br>
-            Main Road,<br>
-            Your City – 000000
-          </p>
-        </div>
-
+      <div class="contact-card">
+        <h3>📞 Call Us</h3>
+        <p>Mobile: <strong>90000 00000</strong></p>
+        <a href="tel:9000000000" class="btn btn-call">Call Now</a>
       </div>
-    </div>
+
+      <div class="contact-card">
+        <h3>💬 WhatsApp</h3>
+        <p>Quick support on WhatsApp</p>
+        <a href="https://wa.me/919000000000" target="_blank" class="btn btn-whatsapp">
+          Chat on WhatsApp
+        </a>
+      </div>
+
+      <div class="contact-card">
+        <h3>📍 Address</h3>
+        <p>
+          Cyber Cafe,<br>
+          Main Road,<br>
+          Your City – 000000
+        </p>
+      </div>
+
+    </section>
+
   </div>
 
   <!-- Footer -->
