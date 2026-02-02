@@ -1,327 +1,180 @@
 <!DOCTYPE html>
 <html lang="mr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cyber Cafe | Online Services</title>
 
-<title>Nilambari Cyber Cafe & Digital Seva Center</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-<meta name="description" content="Nilambari Cyber Cafe & Digital Seva Center – Aadhaar, PAN, PM-Kisan, MAHA DBT, Ration Card, Government Services, Printing & Online Work in Nashik.">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
 
-<style>
-body{
-    margin:0;
-    font-family:'Segoe UI', sans-serif;
-    background:linear-gradient(135deg,#f4f8ff,#fbfdff);
-}
+    body {
+      background: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
 
-/* HEADER */
-header{
-    background:linear-gradient(90deg,#0a4da3,#1e88e5);
-    padding:16px;
-    text-align:center;
-    color:#fff;
-}
-.logo{
-    font-size:26px;
-    font-weight:700;
-}
-.logo small{
-    display:block;
-    font-size:13px;
-    opacity:.9;
-}
+    header {
+      background: linear-gradient(135deg, #0d47a1, #1976d2);
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
 
-/* NAV */
-nav{
-    background:#fff;
-    display:flex;
-    justify-content:center;
-    gap:32px;
-    padding:12px;
-    box-shadow:0 3px 10px rgba(0,0,0,.08);
-}
-nav a{
-    text-decoration:none;
-    color:#0a4da3;
-    font-weight:600;
-}
+    header h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
 
-/* CONTAINER */
-.container{
-    max-width:1100px;
-    margin:auto;
-    padding:35px 20px;
-}
+    header p {
+      font-size: 16px;
+      opacity: 0.95;
+    }
 
-/* HERO */
-.hero{
-    background:#fff;
-    border-radius:22px;
-    padding:40px 35px;
-    box-shadow:0 18px 40px rgba(0,0,0,.08);
-}
-.hero-inner{
-    display:flex;
-    gap:30px;
-    align-items:center;
-    justify-content:space-between;
-    flex-wrap:wrap;
-}
-.hero-text{
-    max-width:650px;
-}
-.hero h1{
-    margin-top:0;
-    color:#0a4da3;
-    font-size:28px;
-}
-.hero-marathi{
-    color:#2e7d32;
-    font-weight:600;
-    margin:10px 0;
-}
-.hero p{
-    font-size:15px;
-    line-height:1.6;
-}
-.hero-cta{
-    margin-top:22px;
-}
-.cta{
-    display:inline-flex;
-    align-items:center;
-    gap:8px;
-    padding:12px 26px;
-    margin:6px;
-    border-radius:30px;
-    text-decoration:none;
-    color:#fff;
-    font-weight:600;
-}
-.cta-call{background:#28a745}
-.cta-wa{background:#25D366}
-.hero-illu{
-    font-size:64px;
-    opacity:.85;
-}
+    nav {
+      background: #ffffff;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
 
-/* POPULAR SERVICES */
-.highlight{
-    margin-top:45px;
-    background:#fff;
-    border-radius:22px;
-    padding:30px;
-    box-shadow:0 14px 30px rgba(0,0,0,.08);
-}
-.highlight h2{
-    text-align:center;
-    color:#0a4da3;
-}
-.h-grid{
-    margin-top:25px;
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:22px;
-}
-.h-card{
-    background:#f9fbff;
-    border-radius:18px;
-    padding:26px;
-    text-align:center;
-    transition:.3s;
-}
-.h-card:hover{
-    transform:translateY(-5px);
-    background:#fff;
-    box-shadow:0 14px 30px rgba(0,0,0,.12);
-}
-.h-card span{
-    font-size:32px;
-}
-.h-card small{
-    color:#2e7d32;
-}
+    nav a {
+      text-decoration: none;
+      color: #0d47a1;
+      font-weight: 500;
+    }
 
-/* SERVICES GRID */
-.grid{
-    margin-top:55px;
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:24px;
-}
-.service-link{
-    text-decoration:none;
-    color:inherit;
-}
-.box{
-    background:#fff;
-    border-radius:18px;
-    padding:28px;
-    text-align:center;
-    box-shadow:0 10px 22px rgba(0,0,0,.08);
-    transition:.3s;
-}
-.service-link:hover .box{
-    transform:translateY(-6px);
-    box-shadow:0 20px 40px rgba(0,0,0,.12);
-}
-.box span{
-    font-size:30px;
-}
+    nav a:hover {
+      color: #1976d2;
+    }
 
-/* TRUST */
-.trust{
-    margin-top:60px;
-    background:#fff;
-    border-radius:20px;
-    padding:35px;
-    text-align:center;
-    box-shadow:0 14px 30px rgba(0,0,0,.08);
-}
-.trust-grid{
-    margin-top:25px;
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
-}
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 30px 20px;
+    }
 
-/* TESTIMONIALS */
-.testimonials{
-    margin-top:50px;
-    background:#f5f8ff;
-    border-radius:20px;
-    padding:35px;
-    text-align:center;
-}
-.test-grid{
-    margin-top:30px;
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:25px;
-}
-.test{
-    background:#fff;
-    padding:22px;
-    border-radius:16px;
-    box-shadow:0 10px 24px rgba(0,0,0,.08);
-}
+    .hero {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+      margin-bottom: 30px;
+    }
 
-/* FOOTER */
-footer{
-    margin-top:60px;
-    background:#0a4da3;
-    color:#fff;
-    text-align:center;
-    padding:20px;
-    font-size:14px;
-}
+    .hero h2 {
+      color: #0d47a1;
+      margin-bottom: 15px;
+    }
 
-/* FLOATING WA */
-.whatsapp{
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    background:#25D366;
-    color:#fff;
-    font-size:26px;
-    padding:14px 16px;
-    border-radius:50%;
-    text-decoration:none;
-}
+    .hero p {
+      margin-bottom: 10px;
+    }
 
-/* MOBILE */
-@media(max-width:768px){
-    .hero-inner{flex-direction:column;text-align:center;}
-}
-</style>
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    }
+
+    .card h3 {
+      color: #1976d2;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #0d47a1;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+  </style>
 </head>
-
 <body>
 
-<header>
-<div class="logo">
-🖥️ Nilambari Cyber Cafe
-<small>Digital Seva Center</small>
-</div>
-</header>
+  <!-- Header -->
+  <header>
+    <h1>Cyber Cafe & Online Services</h1>
+    <p>सर्व सरकारी व ऑनलाईन सेवा एकाच ठिकाणी | All Online & Government Services</p>
+  </header>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="services.html">Services</a>
-<a href="contact.html">Contact</a>
-</nav>
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-<div class="container">
+  <!-- Main Content -->
+  <div class="container">
 
-<!-- HERO -->
-<div class="hero">
-<div class="hero-inner">
-<div class="hero-text">
-<h1>Digital Services, Delivered with Trust 🙏</h1>
-<p class="hero-marathi">तुमचं काम – आमची जबाबदारी</p>
-<p>
-आधार, पॅन, शिधापत्रिका, PM-Kisan, MAHA DBT, सरकारी सेवा,
-प्रिंटिंग व ऑनलाईन कामे – सर्व सुविधा एकाच ठिकाणी.
-</p>
-<div class="hero-cta">
-<a href="tel:7721091856" class="cta cta-call">📞 Call Now</a>
-<a href="https://wa.me/917721091856" class="cta cta-wa">💬 WhatsApp</a>
-</div>
-</div>
-<div class="hero-illu">🤝📄💻</div>
-</div>
-</div>
+    <!-- Hero Section -->
+    <section class="hero">
+      <h2>आपले स्वागत आहे | Welcome</h2>
+      <p>
+        आमच्या Cyber Cafe मध्ये आपले हार्दिक स्वागत आहे.
+        येथे सर्व प्रकारच्या सरकारी, शैक्षणिक आणि ऑनलाईन सेवा
+        विश्वासार्ह आणि जलद पद्धतीने उपलब्ध करून दिल्या जातात.
+      </p>
+      <p>
+        Welcome to our Cyber Cafe. We provide fast, reliable and professional
+        online services including government forms, education services,
+        printing, scanning and more.
+      </p>
+    </section>
 
-<!-- POPULAR -->
-<div class="highlight">
-<h2>🔥 Popular Services</h2>
-<div class="h-grid">
-<div class="h-card"><span>💳</span><h4>Aadhaar Payment (AEPS)</h4><small>Cash / DBT</small></div>
-<div class="h-card"><span>🌾</span><h4>PM-Kisan</h4><small>Register / Update</small></div>
-<div class="h-card"><span>🎓</span><h4>MAHA DBT</h4><small>Scholarships</small></div>
-<div class="h-card"><span>🪪</span><h4>Aadhaar / PAN</h4><small>Update / Correction</small></div>
-</div>
-</div>
+    <!-- Services Preview -->
+    <section class="services">
+      <div class="card">
+        <h3>Government Services</h3>
+        <p>
+          आधार, पॅन कार्ड, जात प्रमाणपत्र, उत्पन्न प्रमाणपत्र,
+          ऑनलाइन अर्ज.
+        </p>
+      </div>
 
-<!-- SERVICES -->
-<div class="grid">
-<a href="services.html" class="service-link"><div class="box"><span>📄</span><h4>Government Services</h4></div></a>
-<a href="services.html" class="service-link"><div class="box"><span>🟡</span><h4>Ration Card</h4></div></a>
-<a href="services.html" class="service-link"><div class="box"><span>🌾</span><h4>Farmer Services</h4></div></a>
-<a href="services.html" class="service-link"><div class="box"><span>🏦</span><h4>Loan Guidance</h4></div></a>
-<a href="services.html" class="service-link"><div class="box"><span>🎓</span><h4>Exam & Admission</h4></div></a>
-<a href="services.html" class="service-link"><div class="box"><span>🖨️</span><h4>Cyber Cafe Work</h4></div></a>
-</div>
+      <div class="card">
+        <h3>Education Services</h3>
+        <p>
+          Admission Forms, Scholarships, Exam Forms,
+          Online Applications.
+        </p>
+      </div>
 
-<!-- TRUST -->
-<div class="trust">
-<h2>आपण आमच्यावर विश्वास का ठेवावा?</h2>
-<div class="trust-grid">
-<div>🏛️<br><strong>Government Services</strong></div>
-<div>📄<br><strong>Proper Documentation</strong></div>
-<div>💬<br><strong>WhatsApp Support</strong></div>
-<div>⭐<br><strong>Google Verified</strong></div>
-</div>
-</div>
+      <div class="card">
+        <h3>Printing & Scanning</h3>
+        <p>
+          Black & White / Color Print, Scan,
+          Lamination, Xerox.
+        </p>
+      </div>
+    </section>
 
-<!-- TESTIMONIALS -->
-<div class="testimonials">
-<h2>ग्राहक काय सांगतात?</h2>
-<div class="test-grid">
-<div class="test">“काम जलद व विश्वासार्ह आहे.”<br><strong>– शेतकरी</strong></div>
-<div class="test">“WhatsApp अपडेट खूप सोयीचे.”<br><strong>– विद्यार्थी</strong></div>
-<div class="test">“सरकारी कामासाठी योग्य ठिकाण.”<br><strong>– स्थानिक नागरिक</strong></div>
-</div>
-</div>
+  </div>
 
-</div>
-
-<footer>
-© 2026 Nilambari Cyber Cafe | All Rights Reserved
-</footer>
-
-<a class="whatsapp" href="https://wa.me/917721091856">💬</a>
+  <!-- Footer -->
+  <footer>
+    © 2026 Cyber Cafe. All Rights Reserved.
+  </footer>
 
 </body>
 </html>
