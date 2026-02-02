@@ -1,269 +1,197 @@
 <!DOCTYPE html>
 <html lang="mr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Cyber Cafe</title>
 
-<title>Services | Cyber Cafe & Digital Seva</title>
-<meta name="description" content="Cyber Cafe – All Government, Aadhaar, PAN, Ration Card, PM Kisan, MAHA DBT, AEPS, Farmer Schemes, Banking & Online Services at one place.">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-<style>
-body{
-    margin:0;
-    font-family:'Segoe UI',sans-serif;
-    background:#f5f8ff;
-    color:#222;
-}
-header{
-    background:linear-gradient(90deg,#0a4da3,#1e88e5);
-    padding:16px;
-    text-align:center;
-    color:#fff;
-}
-nav{
-    background:#fff;
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    padding:12px;
-    box-shadow:0 3px 10px rgba(0,0,0,.08);
-}
-nav a{
-    text-decoration:none;
-    color:#0a4da3;
-    font-weight:600;
-}
-.container{
-    max-width:1100px;
-    margin:auto;
-    padding:35px 20px;
-}
-.section{
-    margin-bottom:45px;
-}
-.section h2{
-    color:#0a4da3;
-    margin-bottom:18px;
-}
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-    gap:22px;
-}
-.card{
-    background:#fff;
-    border-radius:18px;
-    padding:22px;
-    box-shadow:0 10px 24px rgba(0,0,0,.08);
-    transition:.3s;
-}
-.card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 18px 36px rgba(0,0,0,.12);
-}
-.card h4{
-    margin:0 0 8px;
-    font-size:16px;
-    color:#0a4da3;
-}
-.card p{
-    font-size:14px;
-    color:#444;
-}
-.card a{
-    display:inline-block;
-    margin-top:10px;
-    font-size:13px;
-    color:#25D366;
-    font-weight:600;
-    text-decoration:none;
-}
-footer{
-    background:#0a4da3;
-    color:#fff;
-    text-align:center;
-    padding:20px;
-    margin-top:50px;
-}
-</style>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0d47a1, #1976d2);
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 15px;
+      opacity: 0.95;
+    }
+
+    nav {
+      background: #ffffff;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #0d47a1;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #1976d2;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 35px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .section-title h2 {
+      color: #0d47a1;
+      margin-bottom: 8px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+
+    .service-card {
+      background: #ffffff;
+      padding: 25px 22px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 16px 35px rgba(0,0,0,0.15);
+    }
+
+    .service-card h3 {
+      color: #1976d2;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .service-card ul {
+      padding-left: 18px;
+    }
+
+    .service-card ul li {
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+
+    footer {
+      background: #0d47a1;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+  </style>
 </head>
-
 <body>
 
-<header>
-<h1>Cyber Cafe – Services</h1>
-<p>Government • Banking • Farmer • Digital Services</p>
-</header>
+  <!-- Header -->
+  <header>
+    <h1>Our Services</h1>
+    <p>आमच्या सेवा | All Online & Government Services</p>
+  </header>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="services.html">Services</a>
-<a href="contact.html">Contact</a>
-</nav>
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-<div class="container">
+  <!-- Main Content -->
+  <div class="container">
 
-<!-- GOVERNMENT SERVICES -->
-<div class="section">
-<h2>🪪 Government Services</h2>
-<div class="grid">
+    <div class="section-title">
+      <h2>आम्ही देत असलेल्या सेवा</h2>
+      <p>Fast • Reliable • Professional</p>
+    </div>
 
-<div class="card">
-<h4>Income Certificate</h4>
-<p>Online application & tracking</p>
-<a target="_blank" href="https://wa.me/917721091856?text=नमस्कार,%20मला%20Income%20Certificate%20साठी%20माहिती%20हवी%20आहे.">WhatsApp Enquiry</a>
-</div>
+    <section class="services">
 
-<div class="card">
-<h4>Caste Certificate</h4>
-<p>SC / ST / OBC / VJNT</p>
-<a target="_blank" href="https://wa.me/917721091856?text=नमस्कार,%20मला%20Caste%20Certificate%20साठी%20माहिती%20हवी%20आहे.">WhatsApp Enquiry</a>
-</div>
+      <div class="service-card">
+        <h3>📝 Government Services</h3>
+        <ul>
+          <li>आधार कार्ड अपडेट</li>
+          <li>पॅन कार्ड अर्ज</li>
+          <li>जात / उत्पन्न / रहिवासी प्रमाणपत्र</li>
+          <li>रेशन कार्ड / वोटर ID</li>
+          <li>सर्व सरकारी ऑनलाईन अर्ज</li>
+        </ul>
+      </div>
 
-<div class="card">
-<h4>Domicile Certificate</h4>
-<p>Resident proof service</p>
-<a target="_blank" href="https://wa.me/917721091856?text=नमस्कार,%20मला%20Domicile%20Certificate%20साठी%20माहिती%20हवी%20आहे.">WhatsApp Enquiry</a>
-</div>
+      <div class="service-card">
+        <h3>🎓 Education Services</h3>
+        <ul>
+          <li>Admission Forms</li>
+          <li>Scholarship Applications</li>
+          <li>Exam Forms</li>
+          <li>Online Results & Forms</li>
+        </ul>
+      </div>
 
-<div class="card">
-<h4>E-Shram Card</h4>
-<p>Registration & update</p>
-<a target="_blank" href="https://wa.me/917721091856?text=नमस्कार,%20मला%20E-Shram%20Card%20साठी%20माहिती%20हवी%20आहे.">WhatsApp Enquiry</a>
-</div>
+      <div class="service-card">
+        <h3>🖨️ Printing & Scanning</h3>
+        <ul>
+          <li>Black & White Print</li>
+          <li>Color Print</li>
+          <li>Scanning</li>
+          <li>Xerox & Lamination</li>
+        </ul>
+      </div>
 
-</div>
-</div>
+      <div class="service-card">
+        <h3>💼 Online Services</h3>
+        <ul>
+          <li>Online Form Filling</li>
+          <li>Email / PDF Services</li>
+          <li>Resume / CV Creation</li>
+          <li>WhatsApp Updates</li>
+        </ul>
+      </div>
 
-<!-- AADHAAR / PAN -->
-<div class="section">
-<h2>💳 Aadhaar & PAN Services</h2>
-<div class="grid">
+    </section>
 
-<div class="card">
-<h4>Aadhaar Update</h4>
-<p>Name, address, DOB correction</p>
-<a target="_blank" href="https://wa.me/917721091856?text=नमस्कार,%20मला%20Aadhaar%20Update%20करायचे%20आहे.">WhatsApp Enquiry</a>
-</div>
+  </div>
 
-<div class="card">
-<h4>PAN Card Apply / Correction</h4>
-<p>New PAN & changes</p>
-<a target="_blank" href="https://wa.me/917721091856?text=नमस्कार,%20मला%20PAN%20Card%20सेवेसाठी%20माहिती%20हवी%20आहे.">WhatsApp Enquiry</a>
-</div>
-
-<div class="card">
-<h4>Aadhaar–PAN Linking</h4>
-<p>Mandatory linking help</p>
-<a target="_blank" href="https://wa.me/917721091856?text=नमस्कार,%20मला%20Aadhaar-PAN%20Linking%20करायचे%20आहे.">WhatsApp Enquiry</a>
-</div>
-
-</div>
-</div>
-
-<!-- RATION CARD -->
-<div class="section">
-<h2>🟡 Ration Card Services</h2>
-<div class="grid">
-
-<div class="card">
-<h4>New Ration Card</h4>
-<p>Online application</p>
-<a target="_blank" href="https://wa.me/917721091856?text=नमस्कार,%20मला%20नवीन%20Ration%20Card%20काढायचे%20आहे.">WhatsApp Enquiry</a>
-</div>
-
-<div class="card">
-<h4>Name Add / Remove</h4>
-<p>Family member update</p>
-<a target="_blank" href="https://wa.me/917721091856?text=नमस्कार,%20मला%20Ration%20Card%20मध्ये%20नाव%20वाढवायचे%20किंवा%20काढायचे%20आहे.">WhatsApp Enquiry</a>
-</div>
-
-<div class="card">
-<h4>Ration Card Correction</h4>
-<p>Address & details correction</p>
-<a target="_blank" href="https://wa.me/917721091856?text=नमस्कार,%20मला%20Ration%20Card%20Correction%20करायचे%20आहे.">WhatsApp Enquiry</a>
-</div>
-
-</div>
-</div>
-
-<!-- FARMER -->
-<div class="section">
-<h2>🌾 Farmer & DBT Services</h2>
-<div class="grid">
-
-<div class="card">
-<h4>PM-Kisan Registration</h4>
-<p>New / Update</p>
-<a target="_blank" href="https://wa.me/917721091856?text=नमस्कार,%20मला%20PM-Kisan%20Registration%20करायचे%20आहे.">WhatsApp Enquiry</a>
-</div>
-
-<div class="card">
-<h4>MAHA DBT</h4>
-<p>Scholarship & schemes</p>
-<a target="_blank" href="https://wa.me/917721091856?text=नमस्कार,%20मला%20MAHA%20DBT%20साठी%20माहिती%20हवी%20आहे.">WhatsApp Enquiry</a>
-</div>
-
-<div class="card">
-<h4>Crop Insurance</h4>
-<p>Online form support</p>
-<a target="_blank" href="https://wa.me/917721091856?text=नमस्कार,%20मला%20Crop%20Insurance%20साठी%20माहिती%20हवी%20आहे.">WhatsApp Enquiry</a>
-</div>
-
-</div>
-</div>
-
-<!-- BANKING -->
-<div class="section">
-<h2>🏦 Banking & AEPS</h2>
-<div class="grid">
-
-<div class="card">
-<h4>Aadhaar Enabled Payment (AEPS)</h4>
-<p>Cash withdrawal & balance</p>
-<a target="_blank" href="https://wa.me/917721091856?text=नमस्कार,%20मला%20AEPS%20Cash%20Withdrawal%20करायचे%20आहे.">WhatsApp Enquiry</a>
-</div>
-
-<div class="card">
-<h4>Bank Account Opening Help</h4>
-<p>Zero balance guidance</p>
-<a target="_blank" href="https://wa.me/917721091856?text=नमस्कार,%20मला%20Bank%20Account%20Opening%20साठी%20माहिती%20हवी%20आहे.">WhatsApp Enquiry</a>
-</div>
-
-</div>
-</div>
-
-<!-- CYBER CAFE -->
-<div class="section">
-<h2>🖨️ Cyber Cafe & Online Work</h2>
-<div class="grid">
-
-<div class="card">
-<h4>Printing / Scanning</h4>
-<p>Color / B&W / Xerox</p>
-<a target="_blank" href="https://wa.me/917721091856?text=नमस्कार,%20मला%20Printing%20किंवा%20Scanning%20काम%20आहे.">WhatsApp Enquiry</a>
-</div>
-
-<div class="card">
-<h4>Online Form Filling</h4>
-<p>All exams & jobs</p>
-<a target="_blank" href="https://wa.me/917721091856?text=नमस्कार,%20मला%20Online%20Form%20भरायचा%20आहे.">WhatsApp Enquiry</a>
-</div>
-
-<div class="card">
-<h4>Email / PDF Work</h4>
-<p>Digital documentation</p>
-<a target="_blank" href="https://wa.me/917721091856?text=नमस्कार,%20मला%20Email%20किंवा%20PDF%20काम%20आहे.">WhatsApp Enquiry</a>
-</div>
-
-</div>
-</div>
-
-</div>
-
-<footer>
-© 2026 Cyber Cafe & Digital Seva | All Rights Reserved
-</footer>
+  <!-- Footer -->
+  <footer>
+    © 2026 Cyber Cafe. All Rights Reserved.
+  </footer>
 
 </body>
 </html>
