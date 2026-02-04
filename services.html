@@ -3,12 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Government Services | Service Center</title>
+  <title>Services | Government Service Center</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
-    /* ===== RESET ===== */
     *{
       margin:0;
       padding:0;
@@ -21,7 +20,6 @@
       color:#1f2937;
     }
 
-    /* ===== HEADER ===== */
     header{
       background:linear-gradient(120deg,#0b4db8,#1e88e5);
       color:#fff;
@@ -31,17 +29,16 @@
 
     header h1{
       font-size:30px;
-      margin-bottom:6px;
     }
 
     header p{
       font-size:14px;
+      margin-top:6px;
       opacity:0.95;
     }
 
-    /* ===== NAV ===== */
     nav{
-      background:#ffffff;
+      background:#fff;
       display:flex;
       justify-content:center;
       gap:26px;
@@ -52,11 +49,10 @@
     nav a{
       text-decoration:none;
       color:#0b4db8;
-      font-size:14px;
       font-weight:500;
+      font-size:14px;
     }
 
-    /* ===== CONTAINER ===== */
     .container{
       max-width:1200px;
       margin:auto;
@@ -69,8 +65,8 @@
     }
 
     .title h2{
-      font-size:24px;
       color:#0b4db8;
+      font-size:24px;
     }
 
     .title p{
@@ -79,7 +75,6 @@
       margin-top:6px;
     }
 
-    /* ===== SERVICES GRID ===== */
     .services{
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
@@ -90,12 +85,12 @@
     .service{
       width:100%;
       max-width:210px;
-      background:#ffffff;
+      background:#fff;
       border-radius:18px;
       padding:22px 16px 24px;
       text-align:center;
       box-shadow:0 10px 28px rgba(0,0,0,0.08);
-      transition:transform .25s ease, box-shadow .25s ease;
+      transition:.25s ease;
     }
 
     .service:hover{
@@ -110,7 +105,6 @@
 
     .service h3{
       font-size:14px;
-      font-weight:500;
       line-height:1.4;
       margin-bottom:14px;
     }
@@ -121,7 +115,6 @@
       color:#555;
     }
 
-    /* ===== WHATSAPP LOGO BUTTON (SAFE) ===== */
     .wa{
       width:44px;
       height:44px;
@@ -130,8 +123,8 @@
       display:inline-flex;
       align-items:center;
       justify-content:center;
-      text-decoration:none;
       box-shadow:0 6px 18px rgba(37,211,102,0.45);
+      text-decoration:none;
     }
 
     .wa::after{
@@ -141,11 +134,6 @@
       transform:rotate(-15deg);
     }
 
-    .wa:hover{
-      transform:scale(1.15);
-    }
-
-    /* ===== FOOTER ===== */
     footer{
       margin-top:70px;
       background:linear-gradient(120deg,#0b4db8,#1e88e5);
@@ -161,7 +149,7 @@
 
 <header>
   <h1>Government Service Center</h1>
-  <p>सर्व सरकारी सेवा एकाच ठिकाणी</p>
+  <p>सर्व सरकारी व ऑनलाईन सेवा एकाच ठिकाणी</p>
 </header>
 
 <nav>
@@ -179,68 +167,34 @@
 
   <section class="services">
 
-    <div class="service">
-      <div class="icon">📄</div>
-      <h3>उत्पन्न दाखला<br><small>Income Certificate</small></h3>
-      <a class="wa" href="https://wa.me/919XXXXXXXXX?text=Income%20Certificate%20साठी%20कागदपत्रे%20पाठवा" target="_blank"></a>
-    </div>
+    <!-- CERTIFICATES -->
+    <div class="service"><div class="icon">📄</div><h3>उत्पन्न दाखला<br><small>Income Certificate</small></h3><a class="wa" href="https://wa.me/919XXXXXXXXX?text=Income%20Certificate%20साठी%20कागदपत्रे%20पाठवा" target="_blank"></a></div>
+    <div class="service"><div class="icon">🪪</div><h3>जात प्रमाणपत्र<br><small>Caste Certificate</small></h3><a class="wa" href="https://wa.me/919XXXXXXXXX?text=Caste%20Certificate%20Service" target="_blank"></a></div>
+    <div class="service"><div class="icon">🏠</div><h3>रहिवासी दाखला<br><small>Domicile Certificate</small></h3><a class="wa" href="https://wa.me/919XXXXXXXXX?text=Domicile%20Certificate" target="_blank"></a></div>
+    <div class="service"><div class="icon">📑</div><h3>नॉन क्रीमी लेयर<br><small>Non-Creamy Layer</small></h3><a class="wa" href="https://wa.me/919XXXXXXXXX?text=Non%20Creamy%20Layer" target="_blank"></a></div>
 
-    <div class="service">
-      <div class="icon">🪪</div>
-      <h3>जात प्रमाणपत्र<br><small>Caste Certificate</small></h3>
-      <a class="wa" href="https://wa.me/919XXXXXXXXX?text=Caste%20Certificate%20साठी%20कागदपत्रे%20पाठवा" target="_blank"></a>
-    </div>
+    <!-- ID -->
+    <div class="service"><div class="icon">🆔</div><h3>आधार सेवा<br><small>Aadhaar Services</small></h3><a class="wa" href="https://wa.me/919XXXXXXXXX?text=Aadhaar%20Service" target="_blank"></a></div>
+    <div class="service"><div class="icon">💳</div><h3>पॅन कार्ड<br><small>PAN Card</small></h3><a class="wa" href="https://wa.me/919XXXXXXXXX?text=PAN%20Card" target="_blank"></a></div>
+    <div class="service"><div class="icon">🗳️</div><h3>मतदार ओळखपत्र<br><small>Voter ID</small></h3><a class="wa" href="https://wa.me/919XXXXXXXXX?text=Voter%20ID" target="_blank"></a></div>
 
-    <div class="service">
-      <div class="icon">🏠</div>
-      <h3>रहिवासी दाखला<br><small>Domicile Certificate</small></h3>
-      <a class="wa" href="https://wa.me/919XXXXXXXXX?text=Domicile%20Certificate%20साठी%20कागदपत्रे%20पाठवा" target="_blank"></a>
-    </div>
+    <!-- EDUCATION -->
+    <div class="service"><div class="icon">🎓</div><h3>शिष्यवृत्ती<br><small>Scholarship</small></h3><a class="wa" href="https://wa.me/919XXXXXXXXX?text=Scholarship" target="_blank"></a></div>
+    <div class="service"><div class="icon">📝</div><h3>प्रवेश अर्ज<br><small>Admission Form</small></h3><a class="wa" href="https://wa.me/919XXXXXXXXX?text=Admission%20Form" target="_blank"></a></div>
 
-    <div class="service">
-      <div class="icon">📑</div>
-      <h3>नॉन क्रीमी लेयर<br><small>Non-Creamy Layer</small></h3>
-      <a class="wa" href="https://wa.me/919XXXXXXXXX?text=Non%20Creamy%20Layer%20Certificate" target="_blank"></a>
-    </div>
+    <!-- EMPLOYMENT -->
+    <div class="service"><div class="icon">👷</div><h3>ई-श्रम कार्ड<br><small>E-Shram Card</small></h3><a class="wa" href="https://wa.me/919XXXXXXXXX?text=E%20Shram%20Card" target="_blank"></a></div>
+    <div class="service"><div class="icon">🏭</div><h3>उद्योग आधार<br><small>Udyam Registration</small></h3><a class="wa" href="https://wa.me/919XXXXXXXXX?text=Udyam%20Registration" target="_blank"></a></div>
 
-    <div class="service">
-      <div class="icon">💳</div>
-      <h3>पॅन कार्ड<br><small>PAN Card</small></h3>
-      <a class="wa" href="https://wa.me/919XXXXXXXXX?text=PAN%20Card%20Service" target="_blank"></a>
-    </div>
+    <!-- HEALTH & PENSION -->
+    <div class="service"><div class="icon">🏥</div><h3>आयुष्मान भारत<br><small>Ayushman Card</small></h3><a class="wa" href="https://wa.me/919XXXXXXXXX?text=Ayushman%20Card" target="_blank"></a></div>
+    <div class="service"><div class="icon">👴</div><h3>वृद्धापकाळ पेन्शन<br><small>Old Age Pension</small></h3><a class="wa" href="https://wa.me/919XXXXXXXXX?text=Old%20Age%20Pension" target="_blank"></a></div>
 
-    <div class="service">
-      <div class="icon">🆔</div>
-      <h3>आधार सेवा<br><small>Aadhaar Services</small></h3>
-      <a class="wa" href="https://wa.me/919XXXXXXXXX?text=Aadhaar%20Services" target="_blank"></a>
-    </div>
-
-    <div class="service">
-      <div class="icon">🗳️</div>
-      <h3>मतदार ओळखपत्र<br><small>Voter ID</small></h3>
-      <a class="wa" href="https://wa.me/919XXXXXXXXX?text=Voter%20ID%20Service" target="_blank"></a>
-    </div>
-
-    <div class="service">
-      <div class="icon">🎓</div>
-      <h3>शिष्यवृत्ती<br><small>Scholarship</small></h3>
-      <a class="wa" href="https://wa.me/919XXXXXXXXX?text=Scholarship%20Information" target="_blank"></a>
-    </div>
-
-    <div class="service">
-      <div class="icon">🖨️</div>
-      <h3>प्रिंटिंग / झेरॉक्स<br><small>Printing / Xerox</small></h3>
-      <a class="wa" href="https://wa.me/919XXXXXXXXX?text=Printing%20Service" target="_blank"></a>
-    </div>
-
-    <div class="service">
-      <div class="icon">🌐</div>
-      <h3>ऑनलाईन अर्ज<br><small>Online Form Filling</small></h3>
-      <a class="wa" href="https://wa.me/919XXXXXXXXX?text=Online%20Form%20Filling" target="_blank"></a>
-    </div>
+    <!-- OTHER -->
+    <div class="service"><div class="icon">🖨️</div><h3>प्रिंटिंग / झेरॉक्स<br><small>Printing / Xerox</small></h3><a class="wa" href="https://wa.me/919XXXXXXXXX?text=Printing%20Service" target="_blank"></a></div>
+    <div class="service"><div class="icon">🌐</div><h3>ऑनलाईन अर्ज<br><small>Online Form Filling</small></h3><a class="wa" href="https://wa.me/919XXXXXXXXX?text=Online%20Form" target="_blank"></a></div>
 
   </section>
-
 </div>
 
 <footer>
