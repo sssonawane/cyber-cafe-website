@@ -24,25 +24,40 @@ nav{
 }
 nav a{text-decoration:none;color:#0b4db8;font-weight:500;font-size:14px;}
 
-.container{max-width:1200px;margin:auto;padding:40px 20px;}
+.container{max-width:1300px;margin:auto;padding:40px 20px;}
 
-.title{text-align:center;margin-bottom:25px;}
-.title h2{font-size:24px;color:#0b4db8;}
+.title{text-align:center;margin-bottom:20px;}
+.title h2{font-size:26px;color:#0b4db8;}
 .title p{font-size:14px;color:#555;margin-top:6px;}
 
 /* SEARCH */
-.search-box{text-align:center;margin-bottom:30px;}
+.search-box{text-align:center;margin-bottom:20px;}
 .search-box input{
   width:100%;max-width:420px;padding:12px 18px;
   border-radius:30px;border:1px solid #ccc;font-size:14px;
 }
 
-/* SERVICES */
+/* FILTER */
+.filters{
+  display:flex;flex-wrap:wrap;justify-content:center;
+  gap:12px;margin-bottom:35px;
+}
+.filters button{
+  padding:8px 16px;border-radius:20px;
+  border:none;background:#e6ecf5;color:#0b4db8;
+  cursor:pointer;font-size:13px;
+}
+.filters button.active{
+  background:#0b4db8;color:#fff;
+}
+
+/* SERVICES GRID */
 .services{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
-  gap:28px;justify-items:center;
+  gap:26px;justify-items:center;
 }
+
 .service{
   width:100%;max-width:210px;background:#fff;
   border-radius:18px;padding:22px 16px 24px;text-align:center;
@@ -50,8 +65,8 @@ nav a{text-decoration:none;color:#0b4db8;font-weight:500;font-size:14px;}
   transition:.25s ease;
 }
 .service:hover{transform:translateY(-6px);box-shadow:0 18px 45px rgba(0,0,0,.15);}
-.icon{font-size:36px;margin-bottom:10px;}
-.service h3{font-size:14px;line-height:1.4;margin-bottom:14px;}
+.icon{font-size:34px;margin-bottom:8px;}
+.service h3{font-size:14px;line-height:1.4;margin-bottom:12px;}
 .service small{display:block;font-size:12px;color:#555;}
 
 .wa{
@@ -62,7 +77,7 @@ nav a{text-decoration:none;color:#0b4db8;font-weight:500;font-size:14px;}
   text-decoration:none;
 }
 .wa::after{
-  content:"☎";color:#fff;font-size:20px;transform:rotate(-15deg);
+  content:"☎";color:#fff;font-size:20px;
 }
 
 footer{
@@ -76,7 +91,7 @@ footer{
 
 <header>
   <h1>Government Service Center</h1>
-  <p>सर्व सरकारी व ऑनलाईन सेवा एकाच ठिकाणी</p>
+  <p>सर्व सरकारी व CSC सेवा एकाच ठिकाणी</p>
 </header>
 
 <nav>
@@ -89,45 +104,52 @@ footer{
 
 <div class="title">
   <h2>सेवा निवडा</h2>
-  <p>Search करा आणि थेट WhatsApp वर संपर्क साधा</p>
+  <p>Search / Filter करा आणि थेट WhatsApp वर संपर्क साधा</p>
 </div>
 
-<!-- SEARCH -->
 <div class="search-box">
   <input type="text" id="serviceSearch" placeholder="सेवा शोधा | Search service...">
 </div>
 
+<div class="filters">
+  <button class="active" onclick="filterServices('all')">All</button>
+  <button onclick="filterServices('certificate')">Certificates</button>
+  <button onclick="filterServices('id')">ID Services</button>
+  <button onclick="filterServices('education')">Education</button>
+  <button onclick="filterServices('scheme')">Schemes</button>
+  <button onclick="filterServices('online')">Online / Utility</button>
+  <button onclick="filterServices('print')">Printing</button>
+</div>
+
 <section class="services">
 
-<div class="service"><div class="icon">📄</div><h3>उत्पन्न दाखला<br><small>Income Certificate</small></h3>
-<a class="wa" target="_blank" href="https://wa.me/917721091856?text=Income%20Certificate%0A%0Aकागदपत्रे:%0Aआधार%20कार्ड,%20रेशन%20कार्ड,%20पॅन"></a></div>
+<!-- CERTIFICATES -->
+<div class="service certificate"><div class="icon">📄</div><h3>उत्पन्न दाखला<br><small>Income Certificate</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=Income%20Certificate"></a></div>
+<div class="service certificate"><div class="icon">🪪</div><h3>जात प्रमाणपत्र<br><small>Caste Certificate</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=Caste%20Certificate"></a></div>
+<div class="service certificate"><div class="icon">🏠</div><h3>रहिवासी दाखला<br><small>Domicile Certificate</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=Domicile%20Certificate"></a></div>
+<div class="service certificate"><div class="icon">📑</div><h3>नॉन क्रीमी लेयर<br><small>Non Creamy Layer</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=Non%20Creamy%20Layer"></a></div>
 
-<div class="service"><div class="icon">🪪</div><h3>जात प्रमाणपत्र<br><small>Caste Certificate</small></h3>
-<a class="wa" target="_blank" href="https://wa.me/917721091856?text=Caste%20Certificate%0A%0Aकागदपत्रे:%0Aआधार,%20शाळा%20दाखला"></a></div>
+<!-- ID SERVICES -->
+<div class="service id"><div class="icon">💳</div><h3>पॅन कार्ड<br><small>PAN Card</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=PAN%20Card"></a></div>
+<div class="service id"><div class="icon">🆔</div><h3>आधार सेवा<br><small>Aadhaar Services</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=Aadhaar%20Update"></a></div>
+<div class="service id"><div class="icon">🗳️</div><h3>मतदार ओळखपत्र<br><small>Voter ID</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=Voter%20ID"></a></div>
+<div class="service id"><div class="icon">🚗</div><h3>ड्रायव्हिंग लायसन्स<br><small>Driving License</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=Driving%20License"></a></div>
 
-<div class="service"><div class="icon">🏠</div><h3>रहिवासी दाखला<br><small>Domicile Certificate</small></h3>
-<a class="wa" target="_blank" href="https://wa.me/917721091856?text=Domicile%20Certificate"></a></div>
+<!-- EDUCATION -->
+<div class="service education"><div class="icon">🎓</div><h3>शिष्यवृत्ती<br><small>Scholarship</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=Scholarship"></a></div>
+<div class="service education"><div class="icon">📝</div><h3>परीक्षा फॉर्म<br><small>Exam Forms</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=Exam%20Form"></a></div>
 
-<div class="service"><div class="icon">📑</div><h3>नॉन क्रीमी लेयर<br><small>Non-Creamy Layer</small></h3>
-<a class="wa" target="_blank" href="https://wa.me/917721091856?text=Non%20Creamy%20Layer"></a></div>
+<!-- SCHEMES -->
+<div class="service scheme"><div class="icon">👷</div><h3>ई-श्रम कार्ड<br><small>E-Shram Card</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=E%20Shram%20Card"></a></div>
+<div class="service scheme"><div class="icon">🏥</div><h3>आयुष्मान भारत<br><small>Ayushman Card</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=Ayushman%20Card"></a></div>
+<div class="service scheme"><div class="icon">👴</div><h3>वृद्धापकाळ पेन्शन<br><small>Old Age Pension</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=Old%20Age%20Pension"></a></div>
 
-<div class="service"><div class="icon">💳</div><h3>पॅन कार्ड<br><small>PAN Card</small></h3>
-<a class="wa" target="_blank" href="https://wa.me/917721091856?text=PAN%20Card"></a></div>
+<!-- ONLINE -->
+<div class="service online"><div class="icon">🌐</div><h3>ऑनलाईन अर्ज<br><small>Online Form Filling</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=Online%20Form"></a></div>
+<div class="service online"><div class="icon">💡</div><h3>लाईट बिल<br><small>Electricity Bill</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=Electricity%20Bill"></a></div>
 
-<div class="service"><div class="icon">🆔</div><h3>आधार सेवा<br><small>Aadhaar Services</small></h3>
-<a class="wa" target="_blank" href="https://wa.me/917721091856?text=Aadhaar%20Update"></a></div>
-
-<div class="service"><div class="icon">🎓</div><h3>शिष्यवृत्ती<br><small>Scholarship</small></h3>
-<a class="wa" target="_blank" href="https://wa.me/917721091856?text=Scholarship"></a></div>
-
-<div class="service"><div class="icon">👷</div><h3>ई-श्रम कार्ड<br><small>E-Shram Card</small></h3>
-<a class="wa" target="_blank" href="https://wa.me/917721091856?text=E%20Shram%20Card"></a></div>
-
-<div class="service"><div class="icon">🗳️</div><h3>मतदार ओळखपत्र<br><small>Voter ID</small></h3>
-<a class="wa" target="_blank" href="https://wa.me/917721091856?text=Voter%20ID"></a></div>
-
-<div class="service"><div class="icon">🖨️</div><h3>प्रिंटिंग / झेरॉक्स<br><small>Printing / Xerox</small></h3>
-<a class="wa" target="_blank" href="https://wa.me/917721091856?text=Printing%20Service"></a></div>
+<!-- PRINT -->
+<div class="service print"><div class="icon">🖨️</div><h3>प्रिंटिंग / झेरॉक्स<br><small>Printing / Xerox</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=Printing"></a></div>
 
 </section>
 </div>
@@ -136,17 +158,25 @@ footer{
 © 2026 Government Service Center. All Rights Reserved.
 </footer>
 
-<!-- SEARCH SCRIPT -->
 <script>
 const searchInput=document.getElementById("serviceSearch");
 const services=document.querySelectorAll(".service");
 
-searchInput.addEventListener("keyup",function(){
-  const value=this.value.toLowerCase();
+searchInput.addEventListener("keyup",()=>{
+  const v=searchInput.value.toLowerCase();
   services.forEach(s=>{
-    s.style.display=s.innerText.toLowerCase().includes(value)?"block":"none";
+    s.style.display=s.innerText.toLowerCase().includes(v)?"block":"none";
   });
 });
+
+function filterServices(cat){
+  document.querySelectorAll(".filters button").forEach(b=>b.classList.remove("active"));
+  event.target.classList.add("active");
+
+  services.forEach(s=>{
+    s.style.display=(cat==="all"||s.classList.contains(cat))?"block":"none";
+  });
+}
 </script>
 
 </body>
