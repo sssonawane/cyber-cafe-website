@@ -1,182 +1,266 @@
 <!DOCTYPE html>
 <html lang="mr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Services | Government Service Center</title>
+  <meta charset="UTF-8">
+  <title>Services | Cyber Cafe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: system-ui, Arial, sans-serif;
+    }
 
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
-body{background:#f3f6fb;color:#1f2937;}
+    body {
+      background: #f5f7fb;
+      color: #222;
+    }
 
-header{
-  background:linear-gradient(120deg,#0b4db8,#1e88e5);
-  color:#fff;text-align:center;padding:40px 20px;
-}
-header h1{font-size:30px;}
-header p{font-size:14px;margin-top:6px;opacity:.95;}
+    header {
+      background: #ffffff;
+      padding: 15px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    }
 
-nav{
-  background:#fff;display:flex;justify-content:center;
-  gap:26px;padding:12px;box-shadow:0 2px 6px rgba(0,0,0,.08);
-}
-nav a{text-decoration:none;color:#0b4db8;font-weight:500;font-size:14px;}
+    nav a {
+      margin-left: 15px;
+      text-decoration: none;
+      color: #0d6efd;
+      font-weight: 500;
+    }
 
-.container{max-width:1300px;margin:auto;padding:40px 20px;}
+    .container {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 15px;
+      text-align: center;
+    }
 
-.title{text-align:center;margin-bottom:20px;}
-.title h2{font-size:26px;color:#0b4db8;}
-.title p{font-size:14px;color:#555;margin-top:6px;}
+    h1 {
+      color: #0d6efd;
+      margin-bottom: 8px;
+    }
 
-/* SEARCH */
-.search-box{text-align:center;margin-bottom:20px;}
-.search-box input{
-  width:100%;max-width:420px;padding:12px 18px;
-  border-radius:30px;border:1px solid #ccc;font-size:14px;
-}
+    .subtitle {
+      color: #555;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
 
-/* FILTER */
-.filters{
-  display:flex;flex-wrap:wrap;justify-content:center;
-  gap:12px;margin-bottom:35px;
-}
-.filters button{
-  padding:8px 16px;border-radius:20px;
-  border:none;background:#e6ecf5;color:#0b4db8;
-  cursor:pointer;font-size:13px;
-}
-.filters button.active{
-  background:#0b4db8;color:#fff;
-}
+    .search-box {
+      max-width: 420px;
+      margin: 0 auto 20px;
+    }
 
-/* SERVICES GRID */
-.services{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
-  gap:26px;justify-items:center;
-}
+    .search-box input {
+      width: 100%;
+      padding: 12px 16px;
+      border-radius: 30px;
+      border: 1px solid #ddd;
+      font-size: 14px;
+    }
 
-.service{
-  width:100%;max-width:210px;background:#fff;
-  border-radius:18px;padding:22px 16px 24px;text-align:center;
-  box-shadow:0 10px 28px rgba(0,0,0,.08);
-  transition:.25s ease;
-}
-.service:hover{transform:translateY(-6px);box-shadow:0 18px 45px rgba(0,0,0,.15);}
-.icon{font-size:34px;margin-bottom:8px;}
-.service h3{font-size:14px;line-height:1.4;margin-bottom:12px;}
-.service small{display:block;font-size:12px;color:#555;}
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 25px;
+    }
 
-.wa{
-  width:44px;height:44px;border-radius:50%;
-  background:#25D366;display:inline-flex;
-  align-items:center;justify-content:center;
-  box-shadow:0 6px 18px rgba(37,211,102,.45);
-  text-decoration:none;
-}
-.wa::after{
-  content:"☎";color:#fff;font-size:20px;
-}
+    .filter-btn {
+      padding: 8px 16px;
+      border-radius: 20px;
+      border: none;
+      background: #e9eefc;
+      color: #0d6efd;
+      cursor: pointer;
+      font-size: 13px;
+    }
 
-footer{
-  margin-top:70px;background:linear-gradient(120deg,#0b4db8,#1e88e5);
-  color:#fff;text-align:center;padding:16px;font-size:13px;
-}
-</style>
+    .filter-btn.active {
+      background: #0d6efd;
+      color: #fff;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 18px;
+      border-radius: 14px;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.05);
+      transition: transform .2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .card h3 {
+      font-size: 15px;
+      margin-bottom: 6px;
+    }
+
+    .card p {
+      font-size: 12px;
+      color: #666;
+      margin-bottom: 14px;
+    }
+
+    .wa-btn {
+      background: #25d366;
+      border: none;
+      color: #fff;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 15px;
+      background: #eee;
+      text-align: center;
+      font-size: 13px;
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
-  <h1>Government Service Center</h1>
-  <p>सर्व सरकारी व CSC सेवा एकाच ठिकाणी</p>
+  <strong>Cyber Cafe</strong>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 </header>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="services.html">Services</a>
-  <a href="contact.html">Contact</a>
-</nav>
-
 <div class="container">
+  <h1>सेवा निवडा</h1>
+  <div class="subtitle">Search / Filter करा आणि थेट WhatsApp वर संपर्क साधा</div>
 
-<div class="title">
-  <h2>सेवा निवडा</h2>
-  <p>Search / Filter करा आणि थेट WhatsApp वर संपर्क साधा</p>
-</div>
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="सेवा शोधा | Search service...">
+  </div>
 
-<div class="search-box">
-  <input type="text" id="serviceSearch" placeholder="सेवा शोधा | Search service...">
-</div>
+  <div class="filters">
+    <button class="filter-btn active" onclick="filterServices('all')">All</button>
+    <button class="filter-btn" onclick="filterServices('cert')">Certificates</button>
+    <button class="filter-btn" onclick="filterServices('id')">ID Services</button>
+    <button class="filter-btn" onclick="filterServices('edu')">Education</button>
+    <button class="filter-btn" onclick="filterServices('scheme')">Schemes</button>
+    <button class="filter-btn" onclick="filterServices('utility')">Online / Utility</button>
+  </div>
 
-<div class="filters">
-  <button class="active" onclick="filterServices('all')">All</button>
-  <button onclick="filterServices('certificate')">Certificates</button>
-  <button onclick="filterServices('id')">ID Services</button>
-  <button onclick="filterServices('education')">Education</button>
-  <button onclick="filterServices('scheme')">Schemes</button>
-  <button onclick="filterServices('online')">Online / Utility</button>
-  <button onclick="filterServices('print')">Printing</button>
-</div>
+  <div class="services" id="serviceList">
 
-<section class="services">
+    <!-- CARD -->
+    <div class="card" data-category="cert" data-name="income">
+      <h3>उत्पन्न दाखला</h3>
+      <p>Income Certificate</p>
+      <button class="wa-btn" onclick="openWhatsApp('/income')">📞</button>
+    </div>
 
-<!-- CERTIFICATES -->
-<div class="service certificate"><div class="icon">📄</div><h3>उत्पन्न दाखला<br><small>Income Certificate</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=Income%20Certificate"></a></div>
-<div class="service certificate"><div class="icon">🪪</div><h3>जात प्रमाणपत्र<br><small>Caste Certificate</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=Caste%20Certificate"></a></div>
-<div class="service certificate"><div class="icon">🏠</div><h3>रहिवासी दाखला<br><small>Domicile Certificate</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=Domicile%20Certificate"></a></div>
-<div class="service certificate"><div class="icon">📑</div><h3>नॉन क्रीमी लेयर<br><small>Non Creamy Layer</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=Non%20Creamy%20Layer"></a></div>
+    <div class="card" data-category="cert" data-name="caste">
+      <h3>जात प्रमाणपत्र</h3>
+      <p>Caste Certificate</p>
+      <button class="wa-btn" onclick="openWhatsApp('/caste')">📞</button>
+    </div>
 
-<!-- ID SERVICES -->
-<div class="service id"><div class="icon">💳</div><h3>पॅन कार्ड<br><small>PAN Card</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=PAN%20Card"></a></div>
-<div class="service id"><div class="icon">🆔</div><h3>आधार सेवा<br><small>Aadhaar Services</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=Aadhaar%20Update"></a></div>
-<div class="service id"><div class="icon">🗳️</div><h3>मतदार ओळखपत्र<br><small>Voter ID</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=Voter%20ID"></a></div>
-<div class="service id"><div class="icon">🚗</div><h3>ड्रायव्हिंग लायसन्स<br><small>Driving License</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=Driving%20License"></a></div>
+    <div class="card" data-category="cert" data-name="domicile">
+      <h3>रहिवासी दाखला</h3>
+      <p>Domicile Certificate</p>
+      <button class="wa-btn" onclick="openWhatsApp('/domicile')">📞</button>
+    </div>
 
-<!-- EDUCATION -->
-<div class="service education"><div class="icon">🎓</div><h3>शिष्यवृत्ती<br><small>Scholarship</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=Scholarship"></a></div>
-<div class="service education"><div class="icon">📝</div><h3>परीक्षा फॉर्म<br><small>Exam Forms</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=Exam%20Form"></a></div>
+    <div class="card" data-category="cert" data-name="ncl">
+      <h3>नॉन क्रीमी लेयर</h3>
+      <p>Non Creamy Layer</p>
+      <button class="wa-btn" onclick="openWhatsApp('/ncl')">📞</button>
+    </div>
 
-<!-- SCHEMES -->
-<div class="service scheme"><div class="icon">👷</div><h3>ई-श्रम कार्ड<br><small>E-Shram Card</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=E%20Shram%20Card"></a></div>
-<div class="service scheme"><div class="icon">🏥</div><h3>आयुष्मान भारत<br><small>Ayushman Card</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=Ayushman%20Card"></a></div>
-<div class="service scheme"><div class="icon">👴</div><h3>वृद्धापकाळ पेन्शन<br><small>Old Age Pension</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=Old%20Age%20Pension"></a></div>
+    <div class="card" data-category="id" data-name="pan">
+      <h3>पॅन कार्ड</h3>
+      <p>PAN Card</p>
+      <button class="wa-btn" onclick="openWhatsApp('/pan')">📞</button>
+    </div>
 
-<!-- ONLINE -->
-<div class="service online"><div class="icon">🌐</div><h3>ऑनलाईन अर्ज<br><small>Online Form Filling</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=Online%20Form"></a></div>
-<div class="service online"><div class="icon">💡</div><h3>लाईट बिल<br><small>Electricity Bill</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=Electricity%20Bill"></a></div>
+    <div class="card" data-category="id" data-name="aadhaar">
+      <h3>आधार सेवा</h3>
+      <p>Aadhaar Services</p>
+      <button class="wa-btn" onclick="openWhatsApp('/aadhaar')">📞</button>
+    </div>
 
-<!-- PRINT -->
-<div class="service print"><div class="icon">🖨️</div><h3>प्रिंटिंग / झेरॉक्स<br><small>Printing / Xerox</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=Printing"></a></div>
+    <div class="card" data-category="edu" data-name="scholarship">
+      <h3>शिष्यवृत्ती</h3>
+      <p>Scholarship</p>
+      <button class="wa-btn" onclick="openWhatsApp('/scholarship')">📞</button>
+    </div>
 
-</section>
+    <div class="card" data-category="scheme" data-name="ayushman">
+      <h3>आयुष्मान भारत</h3>
+      <p>Ayushman Card</p>
+      <button class="wa-btn" onclick="openWhatsApp('/ayushman')">📞</button>
+    </div>
+
+    <div class="card" data-category="utility" data-name="online">
+      <h3>ऑनलाईन फॉर्म</h3>
+      <p>Online Form Filling</p>
+      <button class="wa-btn" onclick="openWhatsApp('/services')">📞</button>
+    </div>
+
+  </div>
 </div>
 
 <footer>
-© 2026 Government Service Center. All Rights Reserved.
+  © 2026 Cyber Cafe. All rights reserved.
 </footer>
 
 <script>
-const searchInput=document.getElementById("serviceSearch");
-const services=document.querySelectorAll(".service");
+  const phone = "91XXXXXXXXXX"; // इथे तुमचा WhatsApp नंबर टाका
 
-searchInput.addEventListener("keyup",()=>{
-  const v=searchInput.value.toLowerCase();
-  services.forEach(s=>{
-    s.style.display=s.innerText.toLowerCase().includes(v)?"block":"none";
+  function openWhatsApp(shortcut) {
+    const msg = encodeURIComponent(
+      "नमस्कार,\nमला खालील सेवेसाठी माहिती हवी आहे:\n\n" + shortcut
+    );
+    window.open(
+      `https://web.whatsapp.com/send?phone=${phone}&text=${msg}`,
+      "_blank"
+    );
+  }
+
+  function filterServices(category) {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    event.target.classList.add('active');
+
+    document.querySelectorAll('.card').forEach(card => {
+      card.style.display =
+        category === 'all' || card.dataset.category === category
+          ? 'block'
+          : 'none';
+    });
+  }
+
+  document.getElementById('searchInput').addEventListener('keyup', function () {
+    const value = this.value.toLowerCase();
+    document.querySelectorAll('.card').forEach(card => {
+      card.style.display = card.dataset.name.includes(value) ? 'block' : 'none';
+    });
   });
-});
-
-function filterServices(cat){
-  document.querySelectorAll(".filters button").forEach(b=>b.classList.remove("active"));
-  event.target.classList.add("active");
-
-  services.forEach(s=>{
-    s.style.display=(cat==="all"||s.classList.contains(cat))?"block":"none";
-  });
-}
 </script>
 
 </body>
