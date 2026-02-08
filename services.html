@@ -8,132 +8,56 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family:'Poppins',sans-serif;
-    }
-
-    body{
-      background:#f3f6fb;
-      color:#1f2937;
-    }
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+    body{background:#f3f6fb;color:#1f2937;}
 
     header{
       background:linear-gradient(120deg,#0b4db8,#1e88e5);
-      color:#fff;
-      text-align:center;
-      padding:40px 20px;
+      color:#fff;text-align:center;padding:40px 20px;
     }
-
-    header h1{ font-size:30px; }
-    header p{ font-size:14px; margin-top:6px; opacity:.95; }
+    header h1{font-size:30px;}
+    header p{font-size:14px;margin-top:6px;opacity:.95;}
 
     nav{
-      background:#fff;
-      display:flex;
-      justify-content:center;
-      gap:26px;
-      padding:12px;
-      box-shadow:0 2px 6px rgba(0,0,0,0.08);
+      background:#fff;display:flex;justify-content:center;gap:26px;
+      padding:12px;box-shadow:0 2px 6px rgba(0,0,0,.08);
     }
+    nav a{text-decoration:none;color:#0b4db8;font-weight:500;font-size:14px;}
 
-    nav a{
-      text-decoration:none;
-      color:#0b4db8;
-      font-weight:500;
-      font-size:14px;
-    }
-
-    .container{
-      max-width:1200px;
-      margin:auto;
-      padding:45px 20px;
-    }
-
-    .title{
-      text-align:center;
-      margin-bottom:40px;
-    }
-
-    .title h2{
-      font-size:24px;
-      color:#0b4db8;
-    }
-
-    .title p{
-      font-size:14px;
-      color:#555;
-      margin-top:6px;
-    }
+    .container{max-width:1200px;margin:auto;padding:45px 20px;}
+    .title{text-align:center;margin-bottom:40px;}
+    .title h2{font-size:24px;color:#0b4db8;}
+    .title p{font-size:14px;color:#555;margin-top:6px;}
 
     .services{
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
-      gap:30px;
-      justify-items:center;
+      gap:30px;justify-items:center;
     }
 
     .service{
-      width:100%;
-      max-width:210px;
-      background:#fff;
-      border-radius:18px;
-      padding:22px 16px 24px;
-      text-align:center;
-      box-shadow:0 10px 28px rgba(0,0,0,0.08);
+      width:100%;max-width:210px;background:#fff;border-radius:18px;
+      padding:22px 16px 24px;text-align:center;
+      box-shadow:0 10px 28px rgba(0,0,0,.08);
       transition:.25s ease;
     }
-
-    .service:hover{
-      transform:translateY(-6px);
-      box-shadow:0 18px 45px rgba(0,0,0,0.15);
-    }
-
-    .icon{
-      font-size:36px;
-      margin-bottom:10px;
-    }
-
-    .service h3{
-      font-size:14px;
-      line-height:1.4;
-      margin-bottom:14px;
-    }
-
-    .service small{
-      display:block;
-      font-size:12px;
-      color:#555;
-    }
+    .service:hover{transform:translateY(-6px);box-shadow:0 18px 45px rgba(0,0,0,.15);}
+    .icon{font-size:36px;margin-bottom:10px;}
+    .service h3{font-size:14px;line-height:1.4;margin-bottom:14px;}
+    .service small{display:block;font-size:12px;color:#555;}
 
     .wa{
-      width:44px;
-      height:44px;
-      border-radius:50%;
-      background:#25D366;
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      box-shadow:0 6px 18px rgba(37,211,102,0.45);
+      width:44px;height:44px;border-radius:50%;
+      background:#25D366;display:inline-flex;
+      align-items:center;justify-content:center;
+      box-shadow:0 6px 18px rgba(37,211,102,.45);
       text-decoration:none;
     }
-
-    .wa::after{
-      content:"☎";
-      color:#fff;
-      font-size:20px;
-      transform:rotate(-15deg);
-    }
+    .wa::after{content:"☎";color:#fff;font-size:20px;transform:rotate(-15deg);}
 
     footer{
-      margin-top:70px;
-      background:linear-gradient(120deg,#0b4db8,#1e88e5);
-      color:#fff;
-      text-align:center;
-      padding:16px;
-      font-size:13px;
+      margin-top:70px;background:linear-gradient(120deg,#0b4db8,#1e88e5);
+      color:#fff;text-align:center;padding:16px;font-size:13px;
     }
   </style>
 </head>
@@ -142,7 +66,7 @@
 
 <header>
   <h1>Government Service Center</h1>
-  <p>सर्व सरकारी व ऑनलाईन सेवा एकाच ठिकाणी</p>
+  <p>सर्व सरकारी, कायदेशीर व आर्थिक सेवा एकाच ठिकाणी</p>
 </header>
 
 <nav>
@@ -160,31 +84,32 @@
   <section class="services">
 
     <!-- Certificates -->
-    <div class="service"><div class="icon">📄</div><h3>उत्पन्न दाखला<br><small>Income Certificate</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=/income"></a></div>
-    <div class="service"><div class="icon">🪪</div><h3>जात प्रमाणपत्र<br><small>Caste Certificate</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=/caste"></a></div>
-    <div class="service"><div class="icon">🏠</div><h3>रहिवासी दाखला<br><small>Domicile Certificate</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=/domicile"></a></div>
-    <div class="service"><div class="icon">🌍</div><h3>राष्ट्रीयत्व दाखला<br><small>Nationality Certificate</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=/nationality"></a></div>
-    <div class="service"><div class="icon">📑</div><h3>नॉन क्रीमी लेयर<br><small>Non-Creamy Layer</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=/ncl"></a></div>
-    <div class="service"><div class="icon">✅</div><h3>जात वैधता<br><small>Caste Validity</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=/validity"></a></div>
+    <div class="service"><div class="icon">📄</div><h3>उत्पन्न दाखला<br><small>Income Certificate</small></h3><a class="wa" href="https://wa.me/917721091856?text=/income" target="_blank"></a></div>
+    <div class="service"><div class="icon">🪪</div><h3>जात प्रमाणपत्र<br><small>Caste Certificate</small></h3><a class="wa" href="https://wa.me/917721091856?text=/caste" target="_blank"></a></div>
+    <div class="service"><div class="icon">🏠</div><h3>रहिवासी दाखला<br><small>Domicile</small></h3><a class="wa" href="https://wa.me/917721091856?text=/domicile" target="_blank"></a></div>
+    <div class="service"><div class="icon">📑</div><h3>नॉन क्रीमी लेयर<br><small>NCL</small></h3><a class="wa" href="https://wa.me/917721091856?text=/ncl" target="_blank"></a></div>
+    <div class="service"><div class="icon">✅</div><h3>जात वैधता<br><small>Caste Validity</small></h3><a class="wa" href="https://wa.me/917721091856?text=/validity" target="_blank"></a></div>
 
-    <!-- ID Services -->
-    <div class="service"><div class="icon">💳</div><h3>पॅन कार्ड<br><small>PAN Card</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=/pan"></a></div>
-    <div class="service"><div class="icon">🆔</div><h3>आधार सेवा<br><small>Aadhaar Services</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=/aadhaar"></a></div>
-    <div class="service"><div class="icon">🗳️</div><h3>मतदार ओळखपत्र<br><small>Voter ID</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=/voter"></a></div>
-    <div class="service"><div class="icon">🚗</div><h3>ड्रायव्हिंग लायसन्स<br><small>Driving Licence</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=/dl"></a></div>
-    <div class="service"><div class="icon">🛂</div><h3>पासपोर्ट सेवा<br><small>Passport Services</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=/passport"></a></div>
+    <!-- Gazette / Legal -->
+    <div class="service"><div class="icon">📰</div><h3>गॅझेट नोटीस<br><small>Gazette</small></h3><a class="wa" href="https://wa.me/917721091856?text=/gazette" target="_blank"></a></div>
+    <div class="service"><div class="icon">✍️</div><h3>नाव बदल<br><small>Name Change</small></h3><a class="wa" href="https://wa.me/917721091856?text=/namechange" target="_blank"></a></div>
+    <div class="service"><div class="icon">🛐</div><h3>धर्म बदल<br><small>Religion Change</small></h3><a class="wa" href="https://wa.me/917721091856?text=/religion" target="_blank"></a></div>
+    <div class="service"><div class="icon">👮</div><h3>पोलीस पडताळणी<br><small>Police Verification</small></h3><a class="wa" href="https://wa.me/917721091856?text=/police" target="_blank"></a></div>
 
-    <!-- Schemes -->
-    <div class="service"><div class="icon">🌾</div><h3>पीएम किसान<br><small>PM Kisan</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=/pmkisan"></a></div>
-    <div class="service"><div class="icon">🏥</div><h3>आयुष्मान भारत<br><small>Ayushman Card</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=/ayushman"></a></div>
-    <div class="service"><div class="icon">🧑‍🔧</div><h3>ई-श्रम कार्ड<br><small>E-Shram Card</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=/eshram"></a></div>
-    <div class="service"><div class="icon">🏭</div><h3>उद्यम नोंदणी<br><small>Udyam Registration</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=/udyam"></a></div>
-    <div class="service"><div class="icon">👴</div><h3>वृद्धापकाळ पेन्शन<br><small>Old Age Pension</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=/pension"></a></div>
+    <!-- Loans -->
+    <div class="service"><div class="icon">🏦</div><h3>होम लोन<br><small>Home Loan</small></h3><a class="wa" href="https://wa.me/917721091856?text=/homeloan" target="_blank"></a></div>
+    <div class="service"><div class="icon">💼</div><h3>पर्सनल लोन<br><small>Personal Loan</small></h3><a class="wa" href="https://wa.me/917721091856?text=/personalloan" target="_blank"></a></div>
+    <div class="service"><div class="icon">🚜</div><h3>व्यवसाय / कृषी लोन<br><small>Business / Agri Loan</small></h3><a class="wa" href="https://wa.me/917721091856?text=/loan" target="_blank"></a></div>
 
-    <!-- Other -->
-    <div class="service"><div class="icon">🎓</div><h3>शिष्यवृत्ती<br><small>Scholarship</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=/scholarship"></a></div>
-    <div class="service"><div class="icon">🌐</div><h3>ऑनलाईन फॉर्म<br><small>Online Form Filling</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=/services"></a></div>
-    <div class="service"><div class="icon">🖨️</div><h3>प्रिंट / झेरॉक्स<br><small>Printing / Xerox</small></h3><a class="wa" target="_blank" href="https://wa.me/917721091856?text=/print"></a></div>
+    <!-- ID -->
+    <div class="service"><div class="icon">💳</div><h3>पॅन कार्ड<br><small>PAN</small></h3><a class="wa" href="https://wa.me/917721091856?text=/pan" target="_blank"></a></div>
+    <div class="service"><div class="icon">🆔</div><h3>आधार सेवा<br><small>Aadhaar</small></h3><a class="wa" href="https://wa.me/917721091856?text=/aadhaar" target="_blank"></a></div>
+
+    <!-- Schemes / Other -->
+    <div class="service"><div class="icon">🌾</div><h3>PM किसान<br><small>PM Kisan</small></h3><a class="wa" href="https://wa.me/917721091856?text=/pmkisan" target="_blank"></a></div>
+    <div class="service"><div class="icon">🏥</div><h3>आयुष्मान भारत<br><small>Ayushman</small></h3><a class="wa" href="https://wa.me/917721091856?text=/ayushman" target="_blank"></a></div>
+    <div class="service"><div class="icon">🎓</div><h3>शिष्यवृत्ती<br><small>Scholarship</small></h3><a class="wa" href="https://wa.me/917721091856?text=/scholarship" target="_blank"></a></div>
+    <div class="service"><div class="icon">🖨️</div><h3>प्रिंट / झेरॉक्स<br><small>Printing</small></h3><a class="wa" href="https://wa.me/917721091856?text=/print" target="_blank"></a></div>
 
   </section>
 </div>
