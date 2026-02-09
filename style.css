@@ -170,4 +170,56 @@ footer {
   transform:rotate(-15deg);
 }
 
+/* ===== DEMO PREMIUM DESIGN ===== */
+
+.hero-demo {
+  background: linear-gradient(120deg, #0b4db8, #1e88e5);
+  color: #fff;
+  border-radius: 20px;
+  padding: 35px 25px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.hero-demo h2 {
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.hero-demo p {
+  font-size: 14px;
+  opacity: 0.95;
+}
+
+.hero-icons {
+  margin-top: 18px;
+  font-size: 22px;
+}
+
+.hero-icons span {
+  margin: 0 8px;
+}
+
+/* Polished service card */
+.service.demo-upgrade {
+  background: linear-gradient(180deg, #ffffff, #f6f9ff);
+  border: 1px solid #e6ecff;
+}
+
+.service.demo-upgrade:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(11,77,184,0.25);
+}
+
+.service.demo-upgrade .icon {
+  background: #eef3ff;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+}
+
 
